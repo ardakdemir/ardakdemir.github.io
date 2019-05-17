@@ -1,4 +1,4 @@
-## Karl Broman&rsquo;s website
+## Github Repository for Arda Akdemir's Website
 
 See my personal [  website](https://ardakdemir.github.io/).
 
