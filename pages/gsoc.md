@@ -19,5 +19,4 @@ De-novo sequence assembly is the process of constructing a contiguous long seque
 
 ### Community Bonding Period (6 - 27 May)
 
-I have started connecting with other GSoC students and exploring the open source community.
-I had
+I have started connecting with other GSoC students and exploring the open source community. 
