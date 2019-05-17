@@ -1,6 +1,6 @@
 ## Karl Broman&rsquo;s website
 
-See [kbroman.org](https://kbroman.org).
+See my personal [  website](https://ardakdemir.github.io/).
 
 ---
 

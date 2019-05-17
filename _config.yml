@@ -8,13 +8,11 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Karl Broman
+title : Arda Akdemir
 author :
-  name : Karl Broman
-  email : kbroman@gmail.com
-  github : kbroman
-  twitter : kwbroman
-  feedburner : nil
+  name : Arda Akdemir
+  email : ardaakdemir1@gmail.com
+  github : ardakdemir
 
 production_url : https://ardakdemir.github.io
 
