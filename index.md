@@ -1,8 +1,8 @@
 ---
 layout: frontpage
-title: Karl Broman
-description: Karl Broman is Professor in Biostatistics and Medical Informatics at University of Wisconsin - Madison; research in statistical genetics
-keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical genetics, recombination
+title: Arda Akdemir
+description: Ph.D Student in Department of Computer Science, UTokyo
+keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
 ---
 
 <div class="navbar">
