@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Open Access policies, annotated
-description: adsa
 ---
 
 In order to have a better sense of what an Open Access policy for
