@@ -19,4 +19,12 @@ De-novo sequence assembly is the process of constructing a contiguous long seque
 
 ### Community Bonding Period (6 - 27 May)
 
-I have started connecting with other GSoC students and exploring the open source community. 
+I have started connecting with other GSoC students and exploring the open source community.
+
+Initial commits to the BioSequenceGraph repository:
+
+- Fixed several minor bugs in BioSequences repository.
+
+- Added the subsequencing functionality to BioSequencess
+
+- Added several function which will form the basis of constructing De Bruijn Graphs from SequenceGraphNodes.
