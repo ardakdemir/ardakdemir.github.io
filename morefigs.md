@@ -17,8 +17,8 @@ title: Karl Broman
 <table class="wide">
 <tr>
   <td class="left">
-    <a href="pages/publpics/isletc6_fig4.html">
-        <img src="assets/publpics/isletc6_fig4.png" alt="Tian et al. (2015) Fig 4" title="Tian et al. (2015) Fig 4"/>
+    <a href="pages/publpics/mc_integ.html">
+        <img src="assets/publpics/mc_integ.png" alt="Islak et al. (2019)" title="Islak et al. (2015) Fig 4"/>
     </a>
   </td>
   <td class="right">

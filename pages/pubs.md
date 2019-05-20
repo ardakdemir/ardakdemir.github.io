@@ -1,7 +1,7 @@
 ---
 layout: page
 title: publications
-description: Karl Broman's publications
+description: Arda Akdemir's Work
 ---
 
 <div class="navbar">
@@ -23,9 +23,6 @@ description: Karl Broman's publications
 
 **Broman KW**, Sen &#346; (2009) A Guide to QTL Mapping with R/qtl.  Springer, New York
 [![Online complements](icons16/html-icon.png)](http://www.rqtl.org/book)
-[![Amazon](icons16/amazon-icon.png)](https://www.amazon.com/gp/product/0387921249?ie=UTF8&tag=7210-20)
-[![Springer](icons16/springer-icon.png)](http://www.springer.com/978-0-387-92124-2)
-[![R/qtl](icons16/R-icon.png)](http://www.rqtl.org)
 
 ### <a name="articles"></a>journal articles
 
