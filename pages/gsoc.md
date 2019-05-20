@@ -42,3 +42,7 @@ Initial commits to the BioSequenceGraph repository:
 
 
 #### Weekly meetings with Mentor
+
+We are constantly in communication with my mentor Dr. Ben J. Ward through emails and issues on GitHub.
+Apart from that, we are making weekly meetings where we discuss about how to proceed and I go over the work I have done.
+These meetings are important for me especially at the initial phases of the project as they help me a lot to understand basic concepts of the BioSequence packages  and all the underlying design concepts. Also it is a valuable time for me to ask my questions.
