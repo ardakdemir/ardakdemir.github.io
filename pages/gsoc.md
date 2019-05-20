@@ -20,11 +20,25 @@ De-novo sequence assembly is the process of constructing a contiguous long seque
 ### Community Bonding Period (6 - 27 May)
 
 I have started connecting with other GSoC students and exploring the open source community.
+It is a fascinating experience to be in a developing team for the Julia language.
+Going over the source code of the relevant package I already gained a deeper understanding of the underlying concepts
+behind the Julia language. Even though I had previous experience coding in Julia, I realized that I never truly understood some key
+concepts especially related to Types. I believe that through this GSoC project I will gain valuable insights about the fundamental concepts of  Julia programming language and programming languages in general.
 
+My primary aim during this period is to get familiar with the relevant packages and get a head start to the project if it is posssible.
+I am spending most of my time reading the source code, looking at issue related to the packages (trying to fix them if possible) and applying what I have learnt to write some simple code.
+
+Apart from my contributions to the BioSequenceGraph package, I am also storing my experiments with using the BioSequences package in a separate jupyter notebook. This notebook can be thought of as a coding  diary. As I go through the source code and add new functionalities I test them and create example codes. I believe at the end  of the  project this notebook will also be useful for users who would like to see some working examples. It can be considered as an extended cheat sheet for BioSequences package which  to the best of my knowledge does not exist online.
+
+I started contributing to the package two weeks before  the end of the community bonding period. I started by adding some simple functionalities and going over some bugs (or concepts which I thought are bugs but turned out not to be :)).
 Initial commits to the BioSequenceGraph repository:
 
 - Fixed several minor bugs in BioSequences repository.
 
 - Added the subsequencing functionality to BioSequencess
 
-- Added several function which will form the basis of constructing De Bruijn Graphs from SequenceGraphNodes.
+- Added several functionalities which will form the basis of constructing De Bruijn Graphs from SequenceGraphNodes.
+
+
+
+#### Weekly meetings with Mentor
