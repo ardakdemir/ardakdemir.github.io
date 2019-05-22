@@ -35,10 +35,19 @@ Initial commits to the BioSequenceGraph repository:
 
 - Fixed several minor bugs in BioSequences repository.
 
-- Added the subsequencing functionality to BioSequencess
+- Added the subsequencing functionality to BioSequence types. This functionality allows querying a dna sequences with a vector:
+
+'''
+dna_1 = dna"ATGC"
+dna_1[[1,3]]
+'''
+
+- Random Kmer generator is implemented. This functionality is mainly useful for speeding up the testing of the code.
+Similar functions are already available in BioSequences package in the randseq.jl file.
 
 - Added several functionalities which will form the basis of constructing De Bruijn Graphs from SequenceGraphNodes.
 
+- Initialized the DeBruijnGraph type and started writing the core functionalities.
 
 
 #### Weekly meetings with Mentor
@@ -46,3 +55,10 @@ Initial commits to the BioSequenceGraph repository:
 We are constantly in communication with my mentor Dr. Ben J. Ward through emails and issues on GitHub.
 Apart from that, we are making weekly meetings where we discuss about how to proceed and I go over the work I have done.
 These meetings are important for me especially at the initial phases of the project as they help me a lot to understand basic concepts of the BioSequence packages  and all the underlying design concepts. Also it is a valuable time for me to ask my questions.
+
+
+### DeBruijnGraph
+
+Before waiting for the end of community bonding period we have started implementing the DeBruijnGraph package along with some functionalities.
+
+[[ardakdemir.github.io/assets/publpics/debru2.png|alt=debru]]
