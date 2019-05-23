@@ -60,6 +60,8 @@ These meetings are important for me especially at the initial phases of the proj
 
 ### DeBruijnGraph
 
+
+
 Before waiting for the end of community bonding period we have started implementing the DeBruijnGraph package along with some functionalities.
 
 In our formalization of the DeBruijnGraph we represent each dna sequence (of arbitrary length) as a Node on the Graph. There exists a Link between two Nodes which represent the overlaps between nodes/sequences. Each Node is of type SequenceGraphNode and each Link is of type SequenceGraphLink. These types have their special constructors and functionalities. Below is an example of a DeBruijnGraph where sequences are represented as nodes.
@@ -67,3 +69,25 @@ In our formalization of the DeBruijnGraph we represent each dna sequence (of arb
 <a href="../assets/publpics/debru2.png">
     <img src="../assets/publpics/debru2.png"
           title="DeBruijnGraph" alt="dbg"  height="420" width="420"/></a>
+
+DeBruijnGraph is a special type of SequenceGraph with its own constraints ( e.g. links between arbitrary nodes are not allowed).
+It is made up of two fields:
+
+- A vector of Nodes Vector
+
+- A vector of vector of Links
+
+```
+
+struct DeBruijnGraph
+    nodes::Vector{SequenceGraphNode}
+    links::Vector{Vector{SequenceGraphLink}}
+end
+
+```
+
+Implemented Functionalities:
+
+**DeBruijnGraph Constructor:**
+
+At the beginning, we have designed a constructor to represent a static DeBruijnGraph where we assume no operation such as node merging will later be performed. This constructor receives as input a list of kmers of type Kmer{T,K} where T denotes the NucleicAcidType (DNA or RNA) and K denotes the length k. Using these kmers the constructor checks for overlaps of length $k-1$ and creates directed Links from source to destination. Source is the node which has the overlap as a suffix and destination is the node which has the overlap as a prefix.
