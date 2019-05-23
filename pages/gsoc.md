@@ -62,13 +62,8 @@ These meetings are important for me especially at the initial phases of the proj
 
 Before waiting for the end of community bonding period we have started implementing the DeBruijnGraph package along with some functionalities.
 
-In our formalization of the DeBruijnGraph we represent each dna sequence (of arbitrary length) as a Node on the Graph. There exists a Link between two Nodes which represent the overlaps between nodes/sequences. Each Node is of type SequenceGraphNode and each Link is of type SequenceGraphLink. These types have their special constructors and functionalities.
+In our formalization of the DeBruijnGraph we represent each dna sequence (of arbitrary length) as a Node on the Graph. There exists a Link between two Nodes which represent the overlaps between nodes/sequences. Each Node is of type SequenceGraphNode and each Link is of type SequenceGraphLink. These types have their special constructors and functionalities. Below is an example of a DeBruijnGraph where sequences are represented as nodes.
 
-<div class="span2">
 <a href="../assets/publpics/debru2.png">
     <img src="../assets/publpics/debru2.png"
           title="DeBruijnGraph" alt="dbg"  height="420" width="420"/></a>
-</div>
-
-[[https://github.com/ardakdemir/ardakdemir.github.io/blob/master/assets/publpics/debru2.png]]
-![DeBruijnGraph](https://github.com/ardakdemir/ardakdemir.github.io/blob/master/assets/publpics/debru2.png)
