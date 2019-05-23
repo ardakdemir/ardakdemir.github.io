@@ -64,9 +64,12 @@ Before waiting for the end of community bonding period we have started implement
 
 In our formalization of the DeBruijnGraph we represent each dna sequence (of arbitrary length) as a Node on the Graph. There exists a Link between two Nodes which represent the overlaps between nodes/sequences. Each Node is of type SequenceGraphNode and each Link is of type SequenceGraphLink. These types have their special constructors and functionalities.
 
-
+<table class="wide">
+<tr>
 <div class="span2">
 <a href="../assets/pics/photo.png">
     <img src="../assets/publpics/debru2.png"
           title="DeBruijnGraph" alt="dbg"/></a>
 </div>
+</tr>
+</table>
