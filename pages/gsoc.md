@@ -69,3 +69,5 @@ In our formalization of the DeBruijnGraph we represent each dna sequence (of arb
     <img src="../assets/publpics/debru2.png"
           title="DeBruijnGraph" alt="dbg"  height="420" width="420"/></a>
 </div>
+
+![DeBruijnGraph](https://github.com/ardakdemir/ardakdemir.github.io/blob/master/assets/publpics/debru2.png)
