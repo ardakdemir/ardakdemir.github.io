@@ -37,10 +37,11 @@ Initial commits to the BioSequenceGraph repository:
 
 - Added the subsequencing functionality to BioSequence types. This functionality allows querying a dna sequences with a vector:
 
-'''
+```
 dna_1 = dna"ATGC"
 dna_1[[1,3]]
-'''
+```
+
 
 - Random Kmer generator is implemented. This functionality is mainly useful for speeding up the testing of the code.
 Similar functions are already available in BioSequences package in the randseq.jl file.
@@ -61,4 +62,11 @@ These meetings are important for me especially at the initial phases of the proj
 
 Before waiting for the end of community bonding period we have started implementing the DeBruijnGraph package along with some functionalities.
 
-[[ardakdemir.github.io/assets/publpics/debru2.png|alt=debru]]
+In our formalization of the DeBruijnGraph we represent each dna sequence (of arbitrary length) as a Node on the Graph. There exists a Link between two Nodes which represent the overlaps between nodes/sequences. Each Node is of type SequenceGraphNode and each Link is of type SequenceGraphLink. These types have their special constructors and functionalities.
+
+
+<div class="span2">
+<a href="../assets/pics/photo.png">
+    <img src="../assets/publpics/debru2.png"
+          title="DeBruijnGraph" alt="dbg"/></a>
+</div>
