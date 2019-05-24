@@ -17,12 +17,12 @@ keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
 <table class="wide">
 <tr>
   <td class="left">
-    <a href="pages/publpics/mc.html">
+    <a href="assets/publpics/mc.png">
         <img src="assets/publpics/mc.png" alt="Simulating Markov Chains" title="Simulating Markov Chains"/>
     </a>
   </td>
   <td class="right">
-    <a href="pages/publpics/mppdiag_fig4.html">
+    <a href="assets/publpics/simul_pi.png">
         <img src="assets/publpics/simul_pi.png" alt="Islak et al." title="Islak et al. (2019)"/>
     </a>
   </td>
