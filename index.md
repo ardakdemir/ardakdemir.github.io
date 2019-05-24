@@ -31,8 +31,8 @@ keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
 <table class="wide">
 <tr>
   <td class="left">
-    <a href="assets/publpics/basecalling.png">
-        <img src="assets/publpics/basecalling.png" alt="Basecalling" title="Basecalling"/>
+    <a href="assets/publpics/segmented_basecalling.png">
+        <img src="assets/publpics/segmented_basecalling.png" alt="Basecalling" title="Basecalling"/>
     </a>
   </td>
 </tr>
