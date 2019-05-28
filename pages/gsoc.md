@@ -107,4 +107,4 @@ For now the counters are calculated assuming that we have a typical dbg as a dir
 
 **is_a_path** : If we formulate the dbg as static in that we initialize it with some kmers and do not update it, this query is trivial to implement. We can exhaustively check all the nodes that have the first k letters of the path as its label and move down on its children. Since we do not have multiple nodes for the same kmer this can take at most O($|V|^2$) or O($|V| \times $|E| $) even if we implement the query naively. However, if we allow edge collapsing/vertex merging, a more involved solution is necessary to handle all possible graphs. Imagine the following intermediate representation that occurs after merging two 3mers "ATG" and "TGT":
 
-![Alt text](publpics/is_path_1.png?raw=true=30x10)
+![Alt text](publpics/is_path_1.png?raw=true =30x10)
