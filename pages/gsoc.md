@@ -100,6 +100,7 @@ Before moving into the next milestone which is to build a Unitig Graph (UG) from
 - count_indegree : counts the number of incoming edges to a vertex
 - count_outdegree : counts the number of outgoing edges from a vertex
 - is_a_path  : given a sequence of nucleotides checks whether a path exists that yields the given sequences
+- is_in_node : this function will be useful for detecting substrings of a node label which will be useful during path checking as explained below.
 
 These query functions will be useful during UG construction.
 
@@ -108,4 +109,7 @@ For now the counters are calculated assuming that we have a typical dbg as a dir
 **is_a_path** : If we formulate the dbg as static in that we initialize it with some kmers and do not update it, this query is trivial to implement. We can exhaustively check all the nodes that have the first k letters of the path as its label and move down on its children. Since we do not have multiple nodes for the same kmer this can take at most O($|V|^2$) or O($|V| \times $|E| $) even if we implement the query naively. However, if we allow edge collapsing/vertex merging, a more involved solution is necessary to handle all possible graphs. Imagine the following intermediate representation that occurs after merging two 3mers "ATG" and "TGT":
 
 
-<p align:"center"><img src="publpics/is_path_1.png?" alt="is_path" width="200" height="300"></p>
+<p align:"center"><img src="publpics/is_path_1.png?" alt="is_path" width="300" height="300"></p>
+
+
+If we check all the edges and look for an exact match than the algorithm will return a false negative in the cases where we search for a sequence that starts with "TGT". For this reason we implement the node_search as a query over the substrings of the label of a node rather than an exact match.
