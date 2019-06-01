@@ -58,7 +58,7 @@ Apart from that, we are making weekly meetings where we discuss about how to pro
 These meetings are important for me especially at the initial phases of the project as they help me a lot to understand basic concepts of the BioSequence packages  and all the underlying design concepts. Also it is a valuable time for me to ask my questions.
 
 
-### DeBruijnGraph
+#### DeBruijnGraph
 
 
 
@@ -113,3 +113,7 @@ For now the counters are calculated assuming that we have a typical dbg as a dir
 
 
 If we check all the edges and look for an exact match than the algorithm will return a false negative in the cases where we search for a sequence that starts with "TGT". For this reason we implement the node_search as a query over the substrings of the label of a node rather than an exact match.
+
+### Official Coding Period (28 May -)
+
+We have already implemented the core functionalities and defined a basic de Bruijn Graph type for BioJulia during the community bonding period.  
