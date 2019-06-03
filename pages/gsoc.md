@@ -116,4 +116,85 @@ If we check all the edges and look for an exact match than the algorithm will re
 
 ### Official Coding Period (28 May -)
 
-We have already implemented the core functionalities and defined a basic de Bruijn Graph type for BioJulia during the community bonding period.  
+We have already implemented the core functionalities and defined a basic de Bruijn Graph type for BioJulia during the community bonding period.
+
+
+
+After our  discussions with Dr. Ben Ward we decided to revise the constructor function for the dbg. The new design represents each kmer and its reverse complement using the same node and uses (+) and (-) end of a node for labeling edges between nodes.
+
+Below is the  pseudocode for the  new  constructor :  
+
+```
+Make an empty graph
+
+Make two empty Vector{Tuple{DNAKmer{K-1}, Int64}}. Call one `kmer_ovl_bw_nodes`, call the other one `kmer_ovl_fw_nodes`.
+
+For each kmer in kmerset...
+    Make the canonical form of the kmer. (there should be a canonical method in BioSequences).
+    Add the canonical kmer to the nodes of the graph, and note it's ID.
+    Take the prefix (k-1) of the canonical kmer.
+    If the prefix is canonical, push the tuple (canonical(prefix), +nodeid) to `kmer_ovl_fw_nodes`.
+    Else push the tuple(canonical(prefix), +nodeid) to the `kmer_ovl_bw_nodes`.
+    Take the suffix (k-1) of the canonical kmer.
+    If the suffix is canonical, push the tuple (canonical(suffix), -nodeid) to `kmer_ovl_bw_nodes`.
+    Else push the tuple (canonical(suffix), - nodeid) to `kmer_ovl_fw_nodes`.
+end
+
+Sort `kmer_ovl_fw_nodes`.
+Sort `kmer_ovl_bw_nodes`.
+
+for kbn in kmerovl_bw_nodes
+        for kfn in kmerovl_fw_nodes
+            if first(kbn) == first(kfn)
+                add link to graph with source=last(kbn), destination=last(kfn) and distance=-k+1
+            end
+        end
+end
+
+Return the graph.
+```
+
+This constructor returns  a dbg which also consists of two vectors.  Yet the  main difference is that we only represent the kmers  in their canonical form and represent each kmer and its reverse complement with the  same node, both decreases the memory footprint of  the graph. Canonical form of  a kmer  is the lexicographically lesser  one of a  kmer  and  its reverse complement.
+
+Example:
+
+```
+julia> kmer  = Kmer{DNA,4}("ACTT")
+DNA 4-mer:
+ACTT
+
+julia> canonical(kmer)
+DNA 4-mer:
+AAGT
+
+julia> kmer  == canonical(kmer)
+false
+```
+
+kmer ACTT is not in the canonical form as the reverse complement AAGT is lexicographically  smaller. Thus both kmers ACTT, and AAGT is represented   using only a single node as (+) AAGT (-). The plus  end  denotes the prefix in canonical form and also denotes suffix in the non-canonical form.
+
+
+We have finalized the implementation of the  new constructor and did some  initial tests. For random 5 3mer listed  below:
+
+
+```
+5-element Array{Kmer{DNA,3},1}:
+ AAC
+ TCA
+ GAG
+ AAT
+ GCG
+```
+
+The constructor generates the following dbg :
+
+```
+
+DeBruijnGraph(SequenceGraphNode[SequenceGraphNode{Kmer{DNA,3}}(AAC, true), SequenceGraphNode{Kmer{DNA,3}}(TCA, true), SequenceGraphNode{Kmer{DNA,3}}(CTC, true), SequenceGraphNode{Kmer{DNA,3}}(AAT, true), SequenceGraphNode{Kmer{DNA,3}}(CGC, true)], Array{SequenceGraphLink,1}[[], [SequenceGraphLink(2, -3, -2)], [], [], [], []], 3)
+```
+
+which consists of 5 nodes with labels AAC, TCA, CTC, AAT and CGC. As one  can see 3mers GAG and GCG are replaced with their canonical  forms in the  new graph.
+
+
+Next step in our schedule is to revise the  is_a_path and other related dbg functionalities  to be  compatible with the new constructor.
+Then, we are planning to implement some functions for detecting the simple paths in a dbg. is_simple_path function is already initialized for the DeBruijnGraph type.
