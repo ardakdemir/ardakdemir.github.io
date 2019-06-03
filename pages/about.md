@@ -32,7 +32,7 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
             <div id="hide_email">
             Email: <code>a</code><b>I</b><code>akdemir</code><b>don't</b><code>@</code><b>want</b><code></code><b>spam!
             </b><code></code><b>So</b><code></code><b>please</b><code>hgc</code><b>leave
-            </b><code></code><b>me</b><code>.</code><b>alone</b><code>e</code><b>!</b><code>du</code><br/>
+            </b><code></code><b>me</b><code>.</code><b>alone</b><code>j</code><b>!</b><code>p</code><br/>
             Phone: +81 070-4490-2898
             </div>
         </div>
