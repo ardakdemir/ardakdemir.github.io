@@ -198,3 +198,9 @@ which consists of 5 nodes with labels AAC, TCA, CTC, AAT and CGC. As one  can se
 
 Next step in our schedule is to revise the  is_a_path and other related dbg functionalities  to be  compatible with the new constructor.
 Then, we are planning to implement some functions for detecting the simple paths in a dbg. is_simple_path function is already initialized for the DeBruijnGraph type.
+
+Below is an example of a case where we need to consider during addition of the edges. If the suffix/prefix are equivalent to their reverse_complement both directions  should be taken  into account otherwise some paths will be missing in the dbg.s
+
+<a href="../pages/publpics/GSOC.png">
+    <img src="../pages/publpics/GSOC.png"
+          title="DeBruijnGraph" alt="dbg"  height="420" width="420"/></a>
