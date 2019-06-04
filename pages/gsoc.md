@@ -204,3 +204,8 @@ Below is an example of a case where we need to consider during addition of the e
 <a href="../pages/publpics/GSOC.png">
     <img src="../pages/publpics/GSOC.png"
           title="DeBruijnGraph" alt="dbg"  height="420" width="420"/></a>
+
+
+
+Our plan is to combine the nodes on a simple path to create unitigs from kmers. This will increase the nucleotide length of some nodes.
+A simple path is defined as a series of nodes where the internal nodes have incoming and outgoing degrees of one and the start node and the end node have incoming and outgoing degrees >1 respectively. Thus merging the nodes in this path does not create ambiguity.
