@@ -209,3 +209,13 @@ Below is an example of a case where we need to consider during addition of the e
 
 Our plan is to combine the nodes on a simple path to create unitigs from kmers. This will increase the nucleotide length of some nodes.
 A simple path is defined as a series of nodes where the internal nodes have incoming and outgoing degrees of one and the start node and the end node have incoming and outgoing degrees >1 respectively. Thus merging the nodes in this path does not create ambiguity.
+
+
+
+#### Combining Simple paths
+
+Next step in our milestone is to collapse the nodes and merge all the intermediate  edges.
+However  this step requires special care as our current design traverses the links  and edges by their node_id.
+The vector structure  should be  converted to either a  hash table or we must make updates to the all elements of the  nodes  and links vectors  which is  very costly.
+
+That is why I decided to change the design of the dbg. Previously we represented nodes and links as vectors  but now they will be  represented as dictionaries. This way we  do not have to update the index information. Dictionary data structure allows us to cleanly access each node and link after unitigging. 
