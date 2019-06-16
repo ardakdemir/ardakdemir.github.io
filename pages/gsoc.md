@@ -218,4 +218,22 @@ Next step in our milestone is to collapse the nodes and merge all the intermedia
 However  this step requires special care as our current design traverses the links  and edges by their node_id.
 The vector structure  should be  converted to either a  hash table or we must make updates to the all elements of the  nodes  and links vectors  which is  very costly.
 
-That is why I decided to change the design of the dbg. Previously we represented nodes and links as vectors  but now they will be  represented as dictionaries. This way we  do not have to update the index information. Dictionary data structure allows us to cleanly access each node and link after unitigging. 
+That is why I decided to change the design of the dbg. Previously we represented nodes and links as vectors  but now they will be  represented as dictionaries. This way we  do not have to update the index information. Dictionary data structure allows us to cleanly access each node and link after unitiging.
+
+
+Once we update the design of the dbg, merging nodes on a simple path is straightforward. Without loss of generality, we assume that the first node on the maximal simple path is the only remaining node and the rest of the nodes are collapsed into it. So the start node will be the only remaining node at the end. The outgoing edges of the final node (if any) will be the outgoing edges of this new collapsed edge. The k value used during construction is important to be able to traverse neighbors correctly since the length of the sequence gets longer after the merge operation but the overlap is still k-1.
+
+
+We have finalized the merging functionality which is implemented as a function named merge_simple_paths.
+
+```
+
+function merge_simple_paths(dbg,simple_paths;alp=DNAAlphabet{4})
+
+```
+
+
+#### Neighbor Queries
+
+Next we would like to be able make some queries about the successors and predecessors of a given kmer or any sequence.
+These queries are important when we would like to represent a genome as a dbg. 
