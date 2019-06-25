@@ -236,4 +236,35 @@ function merge_simple_paths(dbg,simple_paths;alp=DNAAlphabet{4})
 #### Neighbor Queries
 
 Next we would like to be able make some queries about the successors and predecessors of a given kmer or any sequence.
-These queries are important when we would like to represent a genome as a dbg. 
+These queries are important when we would like to represent a genome as a dbg.
+
+
+Here I take some notes about the design principles of the BioSequences about kmers.
+
+# A nucleotide with bitvalue B has kmer-bitvalue kmerbits[B+1].
+# ambiguous nucleotides have no kmervalue, here set to 0xff.
+
+
+```
+const kmerbits = (0xff, 0x00, 0x01, 0xff,
+                  0x02, 0xff, 0xff, 0xff,
+                  0x03, 0xff, 0xff, 0xff,
+                  0xff, 0xff, 0xff, 0xff)
+```
+
+The internal representation for a biological sequence including kmers is an unsigned integer of 64 bits (UInt64).
+Each nucleotide can be represented using two bits.
+Conversion between a nucleotide and its bit representation is done by calling the reinterpret function:
+
+```
+reinterpret(Int8,nt)
+```
+where nt is the nucleotide.
+
+
+For iterating over the kmers of a sequence we have two available functions at the moment.
+One attempts to make a Biosequence=>Kmer conversion for each substring of a given sequence (extract_canonical_kmers) and the other uses the EveryKmerIterator type to go over the kmers of a sequence.
+First method is intuitive but expensive.
+
+To get all the kmers of a sequence we call the iterate function with different states.
+More specifically since we would like to get all consecutive kmers we increase the start pos by 1.
