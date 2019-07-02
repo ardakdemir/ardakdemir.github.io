@@ -233,6 +233,21 @@ function merge_simple_paths(dbg,simple_paths;alp=DNAAlphabet{4})
 ```
 
 
+#### Error Detection and Simplifying the deBruijn_Graph
+
+Initial and the most basic step of simplifying the dbg is to convert the initial dbg into UG.
+Next step before generating the contigs is to further simplify the UG.
+
+- Trimming dead-end tips : We remove all tips with no outgoing edge. Tip refers to an edge from a node (with multiple outgoing edges), where the destination of the edge has no outgoing edges. These nodes are treated as errors that occur at the end of a read.
+
+- Popping bubbles : Two path that diverge from a single node and then merge into another node. In such a case one of the paths are removed from the graph. Usually the removed path has a low coverage (depth) and treated as an error that occurred in the middle of a read.
+
+- Removing chimeric edges : Edges that cross across two simple paths. Such edges usually have low coverage and removed from the graph.
+
+
+
+
+
 #### Neighbor Queries
 
 Next we would like to be able make some queries about the successors and predecessors of a given kmer or any sequence.
