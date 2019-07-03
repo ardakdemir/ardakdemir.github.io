@@ -259,16 +259,21 @@ Dict{Int64,SequenceGraphNode} with 6 entries:
   5 => SequenceGraphNode{Kmer{DNA,4}}(CGTA, true)
   8 => SequenceGraphNode{BioSequence{DNAAlphabet{4}}}(ACGAAT, true)
   1 => SequenceGraphNode{Kmer{DNA,4}}(AATC, true)
-
+```
+```
   delete_tips(dbg2)
+```
 
-  Candidates
+```
+Candidates
 [7, 1]
 To be removed
 [1]
-
+```
+```
 nodes(dbg2)
-
+```
+```
 Dict{Int64,SequenceGraphNode} with 5 entries:
   7 => SequenceGraphNode{Kmer{DNA,4}}(ATGC, true)
   4 => SequenceGraphNode{Kmer{DNA,4}}(CGTC, true)
