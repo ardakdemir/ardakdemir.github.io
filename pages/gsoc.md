@@ -246,6 +246,36 @@ Next step before generating the contigs is to further simplify the UG.
 
 
 
+delete_tips : This is the first step in error correction. We delete each tip that has no outgoing edge as we simply treat them as errors.
+In addition, we require that at least one outgoing edge of the source of the incoming edge to this tip has a destination which is not a dead-end. First we find all the candidate dead-end tips. Then by checking their parent nodes we decide whether to remove them or not.
+
+Example. Initially we have the following nodes :
+
+```
+Dict{Int64,SequenceGraphNode} with 6 entries:
+  7 => SequenceGraphNode{Kmer{DNA,4}}(ATGC, true)
+  4 => SequenceGraphNode{Kmer{DNA,4}}(CGTC, true)
+  2 => SequenceGraphNode{Kmer{DNA,4}}(AATG, true)
+  5 => SequenceGraphNode{Kmer{DNA,4}}(CGTA, true)
+  8 => SequenceGraphNode{BioSequence{DNAAlphabet{4}}}(ACGAAT, true)
+  1 => SequenceGraphNode{Kmer{DNA,4}}(AATC, true)
+
+  delete_tips(dbg2)
+
+  Candidates
+[7, 1]
+To be removed
+[1]
+
+nodes(dbg2)
+
+Dict{Int64,SequenceGraphNode} with 5 entries:
+  7 => SequenceGraphNode{Kmer{DNA,4}}(ATGC, true)
+  4 => SequenceGraphNode{Kmer{DNA,4}}(CGTC, true)
+  2 => SequenceGraphNode{Kmer{DNA,4}}(AATG, true)
+  5 => SequenceGraphNode{Kmer{DNA,4}}(CGTA, true)
+  8 => SequenceGraphNode{BioSequence{DNAAlphabet{4}}}(ACGAAT, true)
+```
 
 
 #### Neighbor Queries
