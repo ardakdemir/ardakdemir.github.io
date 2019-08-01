@@ -246,7 +246,7 @@ Next step before generating the contigs is to further simplify the UG.
 
 
 
-delete_tips : This is the first step in error correction. We delete each tip that has no outgoing edge as we simply treat them as errors.
+***delete_tips*** : This is the first step in error correction. We delete each tip that has no outgoing edge as we simply treat them as errors.
 In addition, we require that at least one outgoing edge of the source of the incoming edge to this tip has a destination which is not a dead-end. First we find all the candidate dead-end tips. Then by checking their parent nodes we decide whether to remove them or not.
 
 Example. Initially we have the following nodes :
@@ -291,8 +291,7 @@ These queries are important when we would like to represent a genome as a dbg.
 
 Here I take some notes about the design principles of the BioSequences about kmers.
 
-# A nucleotide with bitvalue B has kmer-bitvalue kmerbits[B+1].
-# ambiguous nucleotides have no kmervalue, here set to 0xff.
+A nucleotide with bitvalue B has kmer-bitvalue kmerbits[B+1]. Ambiguous nucleotides have no kmervalue, here set to 0xff.
 
 
 ```

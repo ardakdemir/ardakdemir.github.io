@@ -45,3 +45,11 @@ keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
       </ul>
   </div>
 </div>
+
+
+### Poster Presentations
+- CICLing Poster Presentation La Rochelle, 2019
+- ISMB/ECCB Poster Presentation Basel, 2019
+###Refereed Conference Papers
+- CICLing Proceedings Joint Learning of NER and DEP for Turkish
+-
