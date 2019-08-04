@@ -382,3 +382,17 @@ In our formalization we take the approach used by [Arapan](https://www.ncbi.nlm.
 <p align="center">
 <img src="publpics/arapanway.png?" alt="arapanway" width="500" height="500">
 </p>
+
+
+Following the methodology of Arapan, we repeat path collapsing and bubble popping until no changes are made to the graph.
+Popping bubbles creates new simple paths and by repeating these two steps we can pop not only the simple bubbles as shown previously, but also nested bubbles.
+
+A complex bubble looks like the figure below. We need to first simplify the graph  by popping the bubble formed above and only then we can remove the larger bubble formed at the bottom part of the figure.
+
+<p align="center">
+<img src="publpics/complex_bubble.png?" alt="complex_bub" width="500" height="500">
+</p>
+
+
+Then we move on to deleting tips. Then we repeat the whole process until no further simplification is made on the graph.
+This is because, after removing bubbles and collapsing simple paths, new tips may emerge and vice versa.
