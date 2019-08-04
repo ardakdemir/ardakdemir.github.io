@@ -317,3 +317,50 @@ First method is intuitive but expensive.
 
 To get all the kmers of a sequence we call the iterate function with different states.
 More specifically since we would like to get all consecutive kmers we increase the start pos by 1.
+
+### Design Switch to Sequence Distance Graphs (SDG)
+
+Following the suggestions of my mentor Ben Ward, we switched to a new design to represent the DeBruijnGraph using a more general type 'SequenceDistanceGraph'. This new design is also very similar to the DBG type. Main difference of this type is that it allows direct construction of UG from kmers. Prevously we used a DeBruijn constructor which straightforwardly constructed a graph using the kmers.
+The constructor for SDG directly collapses the simple paths to construct the UG. The constructor can be called with calling SequenceDistanceGraph initializer with a list of kmers.
+
+```
+SequenceDistanceGraph(kmerlist::Vector{DNAKmer{K}}) where {K} = new_graph_from_kmerlist(kmerlist)
+```
+
+```
+kmerlist = Vector{DNAKmer{3}}([DNAKmer{3}("AAT"),DNAKmer{3}("ACT")])
+SequenceDistanceGraph(kmerlist)
+```
+
+I have made several edits to the initial constructor to support constructing the graph from unsorted kmers that are not necessarily canonical. In its final form the function for graph construction is as follows:
+
+```
+function new_graph_from_kmerlist(kmerlist::Vector{DNAKmer{K}}) where {K}
+    str = string("onstructing Sequence Distance Graph from ", length(kmerlist), ' ', K, "-mers")
+    @info string('C', str)
+    sg = GRAPH_TYPE()
+    kmerlist = get_canonical_kmerlist!(kmerlist)
+    sort!(kmerlist)
+    build_unitigs_from_kmerlist!(sg, kmerlist)
+    if n_nodes(sg) > 1
+        connect_unitigs_by_overlaps!(sg, DNAKmer{K})
+    end
+    @info string("Done c", str)
+    return sg
+end
+```
+
+Sorted is done to allow fast search for backward and forward neighbors. This reduces the expected running time of the construction step substantially.
+
+Assuming that we have N nodes and each can have 4 forward and 4 backward neighbors (constant in size), a naive method for checking all nodes (kmers) for membership would have $O(N)$ time for each kmer. By sorting, we have an $O(NlogN)$ preprocessing time and each membership query takes only $O(logN)$ time. Thus the expected time for neighbor search goes down from $O(N^2)$ to $O(NlogN)$.
+
+
+## Final Evaluation Period
+
+We continued the work on graph simplification. There are several heuristical approaches commonly used in the literature.
+After doing a literature review we focused on two methodologies for removing bubbles on DBG.
+First method is used by Velvet which finds all bubbles by using the TourBus Algorithm, which is costly, and removes all the low coverage ones.
+
+Bubble is defined as two simple paths that start and end at same nodes with high similarity score.
+
+<img src="publpics/bubblepop1.png?" alt="is_path" width="300" height="300">
