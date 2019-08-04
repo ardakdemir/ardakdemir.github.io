@@ -363,5 +363,22 @@ First method is used by Velvet which finds all bubbles by using the TourBus Algo
 
 Bubble is defined as two simple paths that start and end at same nodes with high similarity score.
 <p align="center">
-<img src="publpics/bubblepop1.png?" alt="is_path" width="500" height="500">
+<img src="publpics/bubblepop1.png?" alt="bubble1" width="500" height="500">
+</p>
+
+
+The figure above shows bubble made up of two simple paths spelling "AATCTTA" and "AATGTTA". For illustrative purposes we assume that the coverage information is the same for each interior node of the simple paths and it is denoted next to each path as 30x and 3x. The algorithm first checks the similarity between two sequences. If the similarity is above a certain threshold (0.8 identity rate by default) we delete the path with low coverage. So for this example the bubble will be simplified into the figure below.
+
+
+<p align="center">
+<img src="publpics/afterpop.png?" alt="afterpopping" width="500" height="500">
+</p>
+
+
+In our formalization we take the approach used by [Arapan](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3441218/) and first collapse all simple paths and then pop the bubbles. This approach does not make use of the computationally expensive TourBus Algorithm which is required if we directly try to find the bubbles on the DeBruijn Graph constructed using the initial kmer list.
+
+
+
+<p align="center">
+<img src="publpics/arapanway.png?" alt="arapanway" width="500" height="500">
 </p>
