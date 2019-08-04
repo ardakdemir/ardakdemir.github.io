@@ -362,5 +362,6 @@ After doing a literature review we focused on two methodologies for removing bub
 First method is used by Velvet which finds all bubbles by using the TourBus Algorithm, which is costly, and removes all the low coverage ones.
 
 Bubble is defined as two simple paths that start and end at same nodes with high similarity score.
-
-<img src="publpics/bubblepop1.png?" alt="is_path" width="300" height="300">
+<p align="center">
+<img src="publpics/bubblepop1.png?" alt="is_path" width="500" height="500">
+</p>
