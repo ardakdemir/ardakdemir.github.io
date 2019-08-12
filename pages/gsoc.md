@@ -396,3 +396,32 @@ A complex bubble looks like the figure below. We need to first simplify the grap
 
 Then we move on to deleting tips. Then we repeat the whole process until no further simplification is made on the graph.
 This is because, after removing bubbles and collapsing simple paths, new tips may emerge and vice versa.
+
+
+### Tip deletion
+
+Next step is to delete nodes that have tips with either low coverage or shorter length.
+For now we are making use of the coverage information to delete all the low coverage tips on the graph!!
+
+We again start with two reads and extract all 11-mers from : "CACACTCCTGATTTAAATAC" , "CACACTCCAGATTTAAATAC". We obtain 3 contigs after collapsing the simple paths :
+
+```
+SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCTGATTTAAATA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(GATTTAAATAC, false)], Array{DistanceGraphLink,1}[[DistanceGraphLink(-1, 3, -10)], [DistanceGraphLink(-2, 3, -10)], [DistanceGraphLink(3, -2, -10), DistanceGraphLink(3, -1, -10)]])
+```
+
+CACACTCCAGATTTAAATA and CACACTCCTGATTTAAATA point to the same node with sequence : GATTTAAATAC. We remove the sequence with low coverage to obtain an intermediate graph:
+
+```
+
+ After tip removal, SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(< EMPTY SEQUENCE >, true), SDGNode{BioSequence{DNAAlphabet{2}}}(GATTTAAATAC, false)], Array{DistanceGraphLink,1}[[], [], []])
+
+```
+
+
+Then graph building and bubble popping is run again to construct the final version of the graph :
+
+
+```
+SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATAC, false)], Array{DistanceGraphLink,1}[[]])
+
+```
