@@ -400,8 +400,24 @@ This is because, after removing bubbles and collapsing simple paths, new tips ma
 
 ### Tip deletion
 
+
+
 Next step is to delete nodes that have tips with either low coverage or shorter length.
 For now we are making use of the coverage information to delete all the low coverage tips on the graph!!
+
+
+Builder from fastq file with error correction flag : 
+
+```
+SequenceDistanceGraph(fastq_file_name::String,read_num::Int64,K::Int64,error::Bool)= graph_from_fastq(fastq_file_name, read_num,K,error)
+```
+Call the builder with :
+
+```
+SequenceDistanceGraph("pe-reads.fastq",2,11,true)
+
+```
+
 
 We again start with two reads and extract all 11-mers from : "CACACTCCTGATTTAAATAC" , "CACACTCCAGATTTAAATAC". We obtain 3 contigs after collapsing the simple paths :
 
