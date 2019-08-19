@@ -463,4 +463,28 @@ To prevent this issue during overlap finding I define candidates separately for 
 
 ***Definition.*** Backward candidate is either a k-long suffix of a node's sequence or k-long prefix of the same sequence's reverse complement.
 
-By using two lists for forward and backward neighbors we solve the direction issue for finding the overlaps of length k-1 between sequences of length $$\geq$$ k.
+By using two lists for forward and backward neighbors we solve the direction issue for finding the overlaps of length k-1 between sequences of length longer than k.
+
+
+
+### Final Output
+
+After removing tips and bubbles iteratively we get single contigs in most cases without any overlaps. The main reason is the eager execution of the tip removal and bubble popping which prunes many edges  and we usually end up with simple paths on the graph. Then the simple paths are compressed leaving us with separate contigs in most cases. Read mapping must follow this process to find the order of these contigs if possible.
+
+We used [Bandage](https://rrwick.github.io/Bandage/), an open source visualization tool for sequence graphs.
+Below is a small example when we use 10 reads with k=11:
+
+```
+SequenceDistanceGraph("pe-reads.fastq","graph1",10,11,true)
+```
+
+<p align="center">
+<img src="publpics/graph.png?" alt="contigs" width="300" height="300">
+</p>
+
+The corresponding node representation in Julia is as follows:
+
+'''
+
+SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(AAATAATGATGTACTTCCAT, false), SDGNode{BioSequence{DNAAlphabet{2}}}(CAGTTTATTAACAATCTGCG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(ACCCGATAGTGTATGAGAAA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATAC, false), SDGNode{BioSequence{DNAAlphabet{2}}}(AGGCCTTTTCCTGATATACG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(TTGACAACAATAAGAAAAAA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(ATGAAGTGGCACACGGCGAG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(GTGGCAAGCCACGCTGCCAC, false), SDGNode{BioSequence{DNAAlphabet{2}}}(TACATAATTTAGTTCCAGAA, false)], Array{DistanceGraphLink,1}[[], [], [], [], [], [], [], [], []])
+'''
