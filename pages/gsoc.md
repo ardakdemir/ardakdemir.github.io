@@ -449,10 +449,10 @@ The initial graph constructor uses the overlaps between kmers directly to find t
 The main reason is that we store a sequence and its reverse complement in a single node. Yet if we naively look at the k-overlaps without taking into account the direction we may find overlaps that are not necessarily correct.
 Below is an example case for K=3 (which requires an overlap of length 2 between kmers).
 
-
+***Wrong alignment example.***
 
 <p align="center">
-<img src="publpics/wrong_overlap.png?" alt="wrong_overlap" width="500" height="500">
+<img src="publpics/wrong_overlap.png?" alt="wrong_overlap" width="300" height="300">
 </p>
 
 The node on the left contains a 3mer ACT as the prefix of node's reverse complement. The kmer neighbors of the prefix of the node on the right are : ["ACT","CCT","GCT",TCT]. If we naively check the k-1 overlaps between suffixes and prefixes of length k without taking into account the directions we add a wrong edge to the graph.
