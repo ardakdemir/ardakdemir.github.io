@@ -406,7 +406,7 @@ Next step is to delete nodes that have tips with either low coverage or shorter 
 For now we are making use of the coverage information to delete all the low coverage tips on the graph!!
 
 
-Builder from fastq file with error correction flag : 
+Builder from fastq file with error correction flag :
 
 ```
 SequenceDistanceGraph(fastq_file_name::String,read_num::Int64,K::Int64,error::Bool)= graph_from_fastq(fastq_file_name, read_num,K,error)
@@ -441,3 +441,26 @@ Then graph building and bubble popping is run again to construct the final versi
 SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATAC, false)], Array{DistanceGraphLink,1}[[]])
 
 ```
+
+### Graph Building after unitig construction
+
+The initial graph constructor uses the overlaps between kmers directly to find the unitigs. When we find the overlaps between nodes with sequences longer than the initial K  value, we can not make use of the same constructor as we must take into account.
+
+The main reason is that we store a sequence and its reverse complement in a single node. Yet if we naively look at the k-overlaps without taking into account the direction we may find overlaps that are not necessarily correct.
+Below is an example case for K=3 (which requires an overlap of length 2 between kmers).
+
+
+
+<p align="center">
+<img src="publpics/wrong_overlap.png?" alt="wrong_overlap" width="500" height="500">
+</p>
+
+The node on the left contains a 3mer ACT as the prefix of node's reverse complement. The kmer neighbors of the prefix of the node on the right are : ["ACT","CCT","GCT",TCT]. If we naively check the k-1 overlaps between suffixes and prefixes of length k without taking into account the directions we add a wrong edge to the graph.
+
+To prevent this issue during overlap finding I define candidates separately for forward and backward neighbors and check them separately.
+
+***Definition.*** Forward candidate is either a k-long prefix of a node's sequence or k-long suffix of the same sequence's reverse complement.
+
+***Definition.*** Backward candidate is either a k-long suffix of a node's sequence or k-long prefix of the same sequence's reverse complement.
+
+By using two lists for forward and backward neighbors we solve the direction issue for finding the overlaps of length k-1 between sequences of length $$\geq$$ k.
