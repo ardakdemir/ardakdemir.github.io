@@ -488,3 +488,20 @@ The corresponding node representation in Julia is as follows:
 
 SequenceDistanceGraph{BioSequence{DNAAlphabet{2}}}(SDGNode{BioSequence{DNAAlphabet{2}}}[SDGNode{BioSequence{DNAAlphabet{2}}}(AAATAATGATGTACTTCCAT, false), SDGNode{BioSequence{DNAAlphabet{2}}}(CAGTTTATTAACAATCTGCG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(ACCCGATAGTGTATGAGAAA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(CACACTCCAGATTTAAATAC, false), SDGNode{BioSequence{DNAAlphabet{2}}}(AGGCCTTTTCCTGATATACG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(TTGACAACAATAAGAAAAAA, false), SDGNode{BioSequence{DNAAlphabet{2}}}(ATGAAGTGGCACACGGCGAG, false), SDGNode{BioSequence{DNAAlphabet{2}}}(GTGGCAAGCCACGCTGCCAC, false), SDGNode{BioSequence{DNAAlphabet{2}}}(TACATAATTTAGTTCCAGAA, false)], Array{DistanceGraphLink,1}[[], [], [], [], [], [], [], [], []])
 '''
+
+
+#### Example assemblies visualized using BANDAGE
+
+Below is an example that contains a tip (constructor that does not apply error correction):
+
+<p align="center">
+<img src="publpics/before_tip_removal.png?" alt="no_tip_removal" width="300" height="300">
+</p>
+
+
+If we construct an assembly using the error correction enabled we get the below assembly for the same reads:
+
+
+<p align="center">
+<img src="publpics/after_tip_removal.png?" alt="tip_removal" width="300" height="300">
+</p>
