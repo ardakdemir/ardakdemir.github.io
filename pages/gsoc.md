@@ -11,6 +11,9 @@ Mentor : [Ben J. Ward](http://www.earlham.ac.uk/ben-ward)
 
 Relevant Google Summer of Code 2019 [webpage](https://summerofcode.withgoogle.com/projects/#5248824832950272)
 
+Github repository branch : [error-correction2](https://github.com/BioJulia/BioSequenceGraphs.jl/tree/gsoc/error-correction2)
+
+
 
 ### Project Abstract
 
