@@ -16,11 +16,6 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 [blog](https://ardakdemir.github.io) <br/>
 
 
-<div class="span2">
-<a href="../assets/pics/photo.png">
-    <img src="../assets/pics/photo.png"
-          title="Arda Akdemir" alt="Arda"/></a>
-</div>
 
 
 #### Publications
