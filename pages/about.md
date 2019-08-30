@@ -4,11 +4,6 @@ title: about
 description: Ph.D Student in Department of Computer Science, UTokyo
 ---
 
-<div class="span2">
-<a href="../assets/pics/photo.png">
-    <img src="../assets/pics/photo.png"
-          title="Arda Akdemir" alt="Arda"/></a>
-</div>
 
 I am a first year Ph.D student in the
 Department of Computer Science of University of Tokyo, in [Laboratory of Sequence Analysis](http://shibuyalab.hgc.jp/) under the supervision of Assoc. Prof. Tetsuo Shibuya.
@@ -19,6 +14,13 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 [google scholar](https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=tr&oi=ao)<br/>
 [github](https://github.com/ardakdemir)<br/>
 [blog](https://ardakdemir.github.io) <br/>
+
+
+<div class="span2">
+<a href="../assets/pics/photo.png">
+    <img src="../assets/pics/photo.png"
+          title="Arda Akdemir" alt="Arda"/></a>
+</div>
 
 
 #### Publications
@@ -44,7 +46,7 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 #### Honors & Awards
 
-- ***Best Graduation Project Award*** in Computer Engineering  Project Title : Adaptive Tuning of Chess Evaluation Function by Using Genetic Algorithms[link](https://www.cmpe.boun.edu.tr/content/adaptive-tuning-chess-evaluation-function-using-genetic-algorithms)
+- ***Best Graduation Project Award*** in Computer Engineering  Project Title : Adaptive Tuning of Chess Evaluation Function by Using Genetic Algorithms. [link](https://www.cmpe.boun.edu.tr/content/adaptive-tuning-chess-evaluation-function-using-genetic-algorithms)
 - First Prize in Upper Level Japanese Speech Contest organized by Japanese Embassy in 2018 日本語弁論大会優勝者
 - MEXT Scholarship Recipient University of Tokyo - 1 of 10 recipients from Turkey (2018 - )
 - JASSO Scholarship Recipient Osaka University (2015-2016)
