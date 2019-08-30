@@ -22,6 +22,10 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 - Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018.
 - Akdemir, Arda, and Tunga Güngör. "Joint Learning of Named Entity Recognition and Dependency Parsing using Separate Datasets."
 
+#### Books
+
+- Introduction to Markov Chains (in Turkish), Asst.Prof.Dr. Umit Islak,  M.Sc. Arda Akdemir - to be published in 2019
+
 #### Conferences
 
 - 21st SPECOM Conference, Turkey 2019 - Long Oral Presentation 
@@ -30,13 +34,21 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 - 12th Workshop on Geographic Information Retrieval GIR'18 at ACM SIGSPATIAL 2018 - Long Oral Presentation
 - Istanbul Mathematical Sciences Center Conference 2018 - Oral Presentation
 - BYOYO Workshop, 2018 - Volunteer
+- [ProtestNews Lab in CLEF 2019](https://emw.ku.edu.tr/clef-protestnews-2019/) - Organizing Committee Member
 
 #### Honors & Awards
 
 - Best Graduation Project Award in Computer Engineering  Project Title : Genetic Algorithms for Adaptive Tuning of Chess Evaluation Function Parameters
 - First Prize in Japanese Speech Contest organized by Japanese Embassy in 2018 日本語弁論大会優勝者
-- MEXT Scholarship Recipient University of Tokyo (2018 - )
+- MEXT Scholarship Recipient University of Tokyo - 1 of 10 recipients from Turkey (2018 - )
 - JASSO Scholarship Recipient Osaka University (2015-2016)
+
+
+#### Languages
+
+- Japanese: Advanced (N1 141/180)
+- English: Advanced (Toefl 113/120)
+- Turkish: Native
 
 
 ---
