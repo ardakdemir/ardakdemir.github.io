@@ -17,10 +17,10 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 #### Publications
 
-- Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919.
-- Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham
-- Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018.
-- Akdemir, Arda, and Tunga Güngör. "Joint Learning of Named Entity Recognition and Dependency Parsing using Separate Datasets."
+- Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919. [link](https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf)
+- Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham [link](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_2)
+- Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018. [link](https://dl.acm.org/citation.cfm?id=3281363)
+- Akdemir, Arda, and Tunga Güngör. "Joint Learning of Named Entity Recognition and Dependency Parsing using Separate Datasets." [link](https://www.cmpe.boun.edu.tr/~gungort/papers/Joint%20Learning%20of%20Named%20Entity%20Recognition%20and%20Dependency%20Parsing%20using%20Separate%20Datasets.pdf)
 
 #### Books
 
@@ -28,11 +28,11 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 #### Conferences
 
-- 21st SPECOM Conference, Turkey 2019 - Long Oral Presentation 
-- 27th ISMB/ECCB Conference, Switzerland 2019 - Poster Presentation
-- 20th CICLing Conference, France 2019 - Poster Presentation
-- 12th Workshop on Geographic Information Retrieval GIR'18 at ACM SIGSPATIAL 2018 - Long Oral Presentation
-- Istanbul Mathematical Sciences Center Conference 2018 - Oral Presentation
+- [21st SPECOM Conference](http://specom.nw.ru/), Turkey 2019 - Long Oral Presentation 
+- [27th ISMB/ECCB Conference](https://www.iscb.org/ismbeccb2019), Switzerland 2019 - Poster Presentation
+- [20th CICLing Conference](https://www.cicling.org/2019/), France 2019 - Poster Presentation
+- [12th Workshop on Geographic Information Retrieval GIR'18](http://www.geo.uzh.ch/~rsp/gir18/program.html) at ACM SIGSPATIAL 2018 - Long Oral Presentation
+- [Istanbul Mathematical Sciences Center, Probability Days](https://sites.google.com/site/umitislak/imbmprobdays2018) Conference 2018 - Oral Presentation
 - BYOYO Workshop, 2018 - Volunteer
 - [ProtestNews Lab in CLEF 2019](https://emw.ku.edu.tr/clef-protestnews-2019/) - Organizing Committee Member
 
