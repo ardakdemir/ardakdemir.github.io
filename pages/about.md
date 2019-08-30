@@ -14,6 +14,31 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 [github](https://github.com/ardakdemir)<br/>
 [blog](https://ardakdemir.github.io) <br/>
 
+
+#### Publications
+
+- Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919.
+- Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham
+- Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018.
+- Akdemir, Arda, and Tunga Güngör. "Joint Learning of Named Entity Recognition and Dependency Parsing using Separate Datasets."
+
+#### Conferences
+
+- 21st SPECOM Conference, Turkey 2019 - Long Oral Presentation 
+- 27th ISMB/ECCB Conference, Switzerland 2019 - Poster Presentation
+- 20th CICLing Conference, France 2019 - Poster Presentation
+- 12th Workshop on Geographic Information Retrieval GIR'18 at ACM SIGSPATIAL 2018 - Long Oral Presentation
+- Istanbul Mathematical Sciences Center Conference 2018 - Oral Presentation
+- BYOYO Workshop, 2018 - Volunteer
+
+#### Honors & Awards
+
+- Best Graduation Project Award in Computer Engineering  Project Title : Genetic Algorithms for Adaptive Tuning of Chess Evaluation Function Parameters
+- First Prize in Japanese Speech Contest organized by Japanese Embassy in 2018 日本語弁論大会優勝者
+- MEXT Scholarship Recipient University of Tokyo (2018 - )
+- JASSO Scholarship Recipient Osaka University (2015-2016)
+
+
 ---
 
 <div class="container">
