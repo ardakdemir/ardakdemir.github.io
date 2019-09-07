@@ -32,9 +32,7 @@ keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
 <tr>
   <td class="left">
   <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf">
-    <a href="assets/publpics/segmented_basecalling.png">
         <img src="assets/publpics/segmented_basecalling.png" alt="Basecalling" title="Basecalling"/>
-    </a>
     </a>
   </td>
 </tr>
