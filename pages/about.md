@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: About
 description: Ph.D Student in Department of Computer Science, UTokyo
 ---
 
