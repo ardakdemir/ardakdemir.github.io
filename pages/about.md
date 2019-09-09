@@ -10,7 +10,7 @@ Department of Computer Science of University of Tokyo, in [Laboratory of Sequenc
 
 I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), where I focused on Natural Language Processing and Machine Learning.
 
-[curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/AKDEMIR_CV_GOOGLE.pdf)<br/>
+[curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/ArdaCVAug2019.pdf)<br/>
 [google scholar](https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=tr&oi=ao)<br/>
 [github](https://github.com/ardakdemir)<br/>
 [blog](https://ardakdemir.github.io) <br/>
