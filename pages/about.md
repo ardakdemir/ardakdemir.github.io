@@ -16,7 +16,9 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 [blog](https://ardakdemir.github.io) <br/>
 
 
+#### Work
 
+- Research Assistant, University of Tokyo, Department of Computer Science Dec. 2019 ~
 
 #### Publications
 
@@ -38,6 +40,8 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 - [Istanbul Mathematical Sciences Center, Probability Days](https://sites.google.com/site/umitislak/imbmprobdays2018) Conference 2018 - Oral Presentation
 - BYOYO Workshop, 2018 - Volunteer
 - [ProtestNews Lab in CLEF 2019](https://emw.ku.edu.tr/clef-protestnews-2019/) - Organizing Committee Member
+- Informatics in Biology, Medicine and Pharmacology IIBMP, 2019 - Participant
+- [WINTER FESTA Episode 5](https://aip.riken.jp/sympo/winterfesta5/) -  Hitotsubashi University, 2019 - Presentor (Short Talk and Poster)
 
 #### Honors & Awards
 
