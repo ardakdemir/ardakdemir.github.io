@@ -5,12 +5,13 @@ description: Ph.D Student in Department of Computer Science, UTokyo
 ---
 
 
-I am a first year Ph.D student in the
+I am a second year Ph.D student in the
 Department of Computer Science of University of Tokyo, in [Laboratory of Sequence Analysis](http://shibuyalab.hgc.jp/) under the supervision of Assoc. Prof. Tetsuo Shibuya.
+
 
 I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), where I focused on Natural Language Processing and Machine Learning.
 
-[curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/ArdaCVAug2019.pdf)<br/>
+[curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/resumeMay2020.pdf)<br/>
 [google scholar](https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=tr&oi=ao)<br/>
 [github](https://github.com/ardakdemir)<br/>
 [blog](https://ardakdemir.github.io) <br/>
@@ -18,10 +19,13 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 #### Work
 
+- Data Engineer Intern, Apple Japan, Tokyo Nov. 2019 ~
 - Research Assistant, University of Tokyo, Department of Computer Science Dec. 2019 ~
 
 #### Publications
 
+
+- Akdemir, Arda, Tetsuo Shibuya, and Tunga Güngör. "Hierarchical Multi Task Learning with Subword Contextual Embeddings for Languages with Rich Morphology." arXiv preprint arXiv:2004.12247 (2020). [link](https://arxiv.org/pdf/2004.12247.pdf)
 - Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919. [link](https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf)
 - Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham [link](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_2)
 - Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018. [link](https://dl.acm.org/citation.cfm?id=3281363)
