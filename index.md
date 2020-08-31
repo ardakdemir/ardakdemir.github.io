@@ -1,8 +1,18 @@
 ---
-layout: page
-title: About
+layout: frontpage
+title: Arda Akdemir
 description: Ph.D Student in Department of Computer Science, UTokyo
+keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
 ---
+
+<div class="navbar">
+  <div class="navbar-inner">
+      <ul class="nav">
+          <li><a href="{{ BASE_PATH }}/assets/resumeMay2020.pdf">cv</a></li>
+          <li><a href="https://github.com/ardakdemir">github</a></li>
+      </ul>
+  </div>
+</div>
 
 
 I am a second year Ph.D student in the
