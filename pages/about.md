@@ -6,7 +6,7 @@ description: Ph.D Student in Department of Computer Science, UTokyo
 
 
 I am a second year Ph.D student in the
-Department of Computer Science of University of Tokyo, in [Laboratory of Sequence Analysis](http://shibuyalab.hgc.jp/) under the supervision of Assoc. Prof. Tetsuo Shibuya.
+Department of Computer Science of University of Tokyo, in [Laboratory of Sequence Analysis](http://shibuyalab.hgc.jp/) under the supervision of Prof. Tetsuo Shibuya.
 
 
 I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), where I focused on Natural Language Processing and Machine Learning.
@@ -21,10 +21,12 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 - Data Engineer Intern, Apple Japan, Tokyo Nov. 2019 ~
 - Research Assistant, University of Tokyo, Department of Computer Science Dec. 2019 ~
+- Google Summer of Code, Julia Programming Language  June-August 2019
+- NLP Researcher, Koc University, Istanbul June 2018 - September 2019
 
 #### Publications
 
-
+- Akdemir, Arda. "Research on Task Discovery for Transfer Learning in Deep Neural Networks." Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: Student Research Workshop. 2020. [link](https://www.aclweb.org/anthology/2020.acl-srw.6.pdf)
 - Akdemir, Arda, Tetsuo Shibuya, and Tunga Güngör. "Hierarchical Multi Task Learning with Subword Contextual Embeddings for Languages with Rich Morphology." arXiv preprint arXiv:2004.12247 (2020). [link](https://arxiv.org/pdf/2004.12247.pdf)
 - Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919. [link](https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf)
 - Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham [link](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_2)
@@ -33,10 +35,11 @@ I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), whe
 
 #### Books
 
-- Introduction to Markov Chains (in Turkish), Asst.Prof.Dr. Umit Islak,  M.Sc. Arda Akdemir - to be published in 2019
+- Introduction to Markov Chains (in Turkish), Asst.Prof.Dr. Umit Islak,  M.Sc. Arda Akdemir - to be published
 
 #### Conferences
 
+- [ACL 2020](https://acl2020.org/), Virtual Conference, 2020 - Long Oral Presentation 
 - [21st SPECOM Conference](http://specom.nw.ru/), Turkey 2019 - Long Oral Presentation 
 - [27th ISMB/ECCB Conference](https://www.iscb.org/ismbeccb2019), Switzerland 2019 - Poster Presentation
 - [20th CICLing Conference](https://www.cicling.org/2019/), France 2019 - Poster Presentation
