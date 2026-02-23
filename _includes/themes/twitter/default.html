@@ -1,60 +1,472 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/kbroman.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Le fav and touch icons -->
-    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/pics/photo.png"/>
 
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <style>
+      /* ===== Reset & Base ===== */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #333;
+        background: #fff;
+      }
+
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* ===== Language Toggle ===== */
+      html[data-lang="en"] [data-lang="ja"] { display: none !important; }
+      html[data-lang="ja"] [data-lang="en"] { display: none !important; }
+
+      /* ===== Navbar ===== */
+      .site-nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 1000;
+        background: #fff;
+        border-bottom: 1px solid #eaeaea;
+        height: 56px;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-brand {
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #111;
+        text-decoration: none;
+      }
+      .nav-brand:hover { text-decoration: none; color: #2563eb; }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: #555;
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 500;
+        padding: 6px 10px;
+        border-radius: 4px;
+        transition: color 0.15s, background 0.15s;
+      }
+
+      .nav-links a:hover {
+        color: #2563eb;
+        background: #f5f7ff;
+        text-decoration: none;
+      }
+
+      .lang-toggle {
+        display: inline-flex;
+        margin-left: 6px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+        font-size: 0.78rem;
+      }
+
+      .lang-toggle button {
+        border: none;
+        background: transparent;
+        padding: 4px 9px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 0.78rem;
+        color: #999;
+        transition: all 0.15s;
+      }
+
+      .lang-toggle button.active {
+        background: #2563eb;
+        color: #fff;
+      }
+
+      /* ===== Main Container ===== */
+      .site-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 80px 24px 40px;
+      }
+
+      /* ===== Sections ===== */
+      .section {
+        padding: 40px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .section:last-child {
+        border-bottom: none;
+      }
+
+      .section h2 {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 24px;
+        letter-spacing: -0.01em;
+      }
+
+      .section h3 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #111;
+        margin: 24px 0 14px;
+      }
+
+      /* ===== Hero / About ===== */
+      .hero {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 36px 0 40px;
+      }
+
+      .hero-photo { flex-shrink: 0; }
+
+      .hero-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #111;
+        letter-spacing: -0.03em;
+        margin-bottom: 16px;
+      }
+
+      .hero-text .bio {
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+
+      .hero-links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      .hero-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        color: #2563eb;
+      }
+
+      .hero-links a:hover { text-decoration: underline; }
+
+      /* ===== Career Table ===== */
+      .career-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.93rem;
+      }
+
+      .career-table td {
+        padding: 10px 0;
+        vertical-align: top;
+        border-bottom: 1px solid #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .career-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .career-table .date-col {
+        width: 170px;
+        font-weight: 600;
+        color: #555;
+        white-space: nowrap;
+        padding-right: 24px;
+      }
+
+      .career-table .role-col {
+        color: #333;
+      }
+
+      .career-table .role-col .org {
+        font-weight: 600;
+        color: #111;
+      }
+
+      .career-table .role-col .detail {
+        font-size: 0.88rem;
+        color: #777;
+        font-style: italic;
+      }
+
+      .career-table .placeholder-row td {
+        color: #bbb;
+        font-style: italic;
+      }
+
+      /* ===== Publications ===== */
+      .pub-list {
+        list-style: none;
+      }
+
+      .pub-item {
+        margin-bottom: 24px;
+        font-size: 0.93rem;
+        line-height: 1.7;
+        color: #444;
+      }
+
+      .pub-item .pub-title {
+        font-weight: 700;
+        color: #111;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .pub-item .pub-authors {
+        color: #555;
+      }
+
+      .pub-item .pub-authors .me {
+        font-weight: 700;
+        color: #111;
+      }
+
+      .pub-item .pub-venue {
+        color: #777;
+        font-style: italic;
+      }
+
+      .pub-item .pub-links {
+        margin-top: 3px;
+      }
+
+      .pub-item .pub-links a {
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-right: 12px;
+      }
+
+      /* ===== Awards ===== */
+      .award-list {
+        list-style: none;
+      }
+
+      .award-list li {
+        margin-bottom: 12px;
+        font-size: 0.93rem;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      .award-list li strong {
+        color: #111;
+      }
+
+      /* ===== Contact ===== */
+      .contact-list {
+        list-style: none;
+        font-size: 0.93rem;
+      }
+
+      .contact-list li {
+        margin-bottom: 8px;
+        color: #444;
+      }
+
+      .contact-list li i {
+        width: 20px;
+        color: #888;
+        margin-right: 8px;
+        text-align: center;
+      }
+
+      #hide_email b { display: none; }
+
+      /* ===== Languages pills ===== */
+      .lang-pills {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+
+      .lang-pill {
+        padding: 4px 12px;
+        background: #f8f9fa;
+        border: 1px solid #eee;
+        border-radius: 16px;
+        font-size: 0.85rem;
+        color: #555;
+      }
+
+      .lang-pill strong { color: #111; }
+
+      /* ===== Footer ===== */
+      .site-footer {
+        text-align: center;
+        padding: 28px 24px;
+        font-size: 0.8rem;
+        color: #bbb;
+        border-top: 1px solid #f0f0f0;
+      }
+
+      /* ===== Blog List ===== */
+      .post-list { list-style: none; }
+
+      .post-list-item {
+        padding: 16px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .post-list-item:last-child { border-bottom: none; }
+
+      .post-list-item h3 { margin: 0 0 2px; }
+      .post-list-item h3 a { color: #111; font-weight: 600; }
+      .post-list-item h3 a:hover { color: #2563eb; }
+      .post-list-item .post-date { font-size: 0.83rem; color: #999; }
+      .post-list-item .post-excerpt { font-size: 0.9rem; color: #666; margin-top: 4px; }
+
+      /* ===== Mobile ===== */
+      .nav-hamburger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        color: #333;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .hero { flex-direction: column; text-align: center; gap: 20px; align-items: center; }
+        .hero-links { justify-content: center; }
+        .hero-text h1 { font-size: 1.6rem; }
+
+        .career-table .date-col { width: 130px; font-size: 0.85rem; }
+
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 56px; left: 0; right: 0;
+          flex-direction: column;
+          background: #fff;
+          border-bottom: 1px solid #eaeaea;
+          padding: 10px 24px;
+          gap: 2px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .nav-links.open { display: flex; }
+        .nav-hamburger { display: block; }
+        .lang-toggle { margin-left: 0; margin-top: 6px; align-self: flex-start; }
+      }
+
+      @media (max-width: 480px) {
+        .hero-photo img { width: 110px; height: 110px; }
+        .career-table .date-col { width: auto; display: block; padding-right: 0; padding-bottom: 0; }
+        .career-table td { display: block; }
+        .career-table tr { display: block; padding: 10px 0; border-bottom: 1px solid #f5f5f5; }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-              <li><a href="{{ BASE_PATH }}/pages/about.html">about</a></li>
-              <!-- <li><a href="{{ BASE_PATH }}/pages/pubs.html">publications</a></li> -->
-              <!-- <li><a href="{{ BASE_PATH }}/pages/talks.html">talks</a></li>-->
-              <li><a href="{{ BASE_PATH }}/pages/gsoc.html">GSoC-2019 </a></li>
-              <!-- <li><a href="{{ BASE_PATH }}/pages/teaching.html">teaching</a></li>-->
-              <!-- <li><a href="{{ BASE_PATH }}/pages/tutorials.html">tutorials</a></li>-->
-          </ul>
-        </div>
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <div class="nav-container">
+        <a class="nav-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="{{ BASE_PATH }}/#about" data-lang="en">About</a><a href="{{ BASE_PATH }}/#about" data-lang="ja">概要</a></li>
+          <li><a href="{{ BASE_PATH }}/#publications" data-lang="en">Publications</a><a href="{{ BASE_PATH }}/#publications" data-lang="ja">論文</a></li>
+          <li><a href="{{ BASE_PATH }}/#career" data-lang="en">Career</a><a href="{{ BASE_PATH }}/#career" data-lang="ja">経歴</a></li>
+          <li><a href="{{ BASE_PATH }}/#contact" data-lang="en">Contact</a><a href="{{ BASE_PATH }}/#contact" data-lang="ja">連絡先</a></li>
+          <li><a href="{{ BASE_PATH }}/blog/">Blog</a></li>
+          <li>
+            <div class="lang-toggle">
+              <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+              <button id="btn-ja" onclick="setLang('ja')">JP</button>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
-    <div class="container-narrow">
+    <!-- Content -->
+    <main class="site-content">
+      {{ content }}
+    </main>
 
-      <div class="content">
-        {{ content }}
-      </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <span data-lang="en">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+      <span data-lang="ja">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+    </footer>
 
-      <hr>
-
-    </div>
+    <!-- Language Toggle Script -->
+    <script>
+      function setLang(lang) {
+        document.documentElement.setAttribute('data-lang', lang);
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+        try { localStorage.setItem('preferred-lang', lang); } catch(e) {}
+      }
+      (function() {
+        try {
+          var saved = localStorage.getItem('preferred-lang');
+          if (saved === 'ja') setLang('ja');
+        } catch(e) {}
+      })();
+      document.querySelectorAll('.nav-links a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          document.querySelector('.nav-links').classList.remove('open');
+        });
+      });
+    </script>
 
     {% include JB/analytics %}
   </body>

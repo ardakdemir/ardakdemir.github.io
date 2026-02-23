@@ -1,0 +1,30 @@
+---
+layout: page
+title: Blog
+description: Blog posts by Arda Akdemir
+---
+
+<div class="section">
+  <div class="section-header">
+    <i class="fa-solid fa-pen-nib"></i>
+    <h2 data-lang="en">Blog</h2>
+    <h2 data-lang="ja">ブログ</h2>
+  </div>
+
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-list-item">
+      <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p data-lang="en" style="color: #888; font-style: italic;">No posts yet. Check back soon!</p>
+  <p data-lang="ja" style="color: #888; font-style: italic;">まだ投稿はありません。お楽しみに！</p>
+  {% endif %}
+</div>

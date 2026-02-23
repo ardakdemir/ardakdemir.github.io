@@ -1,107 +1,217 @@
 ---
 layout: frontpage
 title: Arda Akdemir
-description: Ph.D Student in Department of Computer Science, UTokyo
-keywords: Machine Learning, Deep Learning, NLP, De-novo Genome Assembly
+description: Computer Scientist | NLP, Machine Learning, Bioinformatics
+keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 ---
 
-<div class="navbar">
-  <div class="navbar-inner">
-      <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/resumeMay2020.pdf">cv</a></li>
-          <li><a href="https://github.com/ardakdemir">github</a></li>
-      </ul>
+<!-- ==================== ABOUT ==================== -->
+<section class="hero" id="about">
+  <div class="hero-photo">
+    <img src="{{ BASE_PATH }}/assets/pics/photo_2026.jpeg" alt="Arda Akdemir" />
   </div>
-</div>
+  <div class="hero-text">
+    <h1>Arda Akdemir</h1>
 
+    <p class="bio" data-lang="en">
+      Hi! I am Arda Akdemir. I am a Software Engineer at <a href="https://www.indeed.com/">Indeed</a>, where I build NLP solutions for real-world applications.
+      I hold a Ph.D. in Computer Science from the <a href="https://www.u-tokyo.ac.jp/en/">University of Tokyo</a>,
+      where I worked on Natural Language Processing, Machine Learning, and Bioinformatics
+      in the <a href="http://shibuyalab.hgc.jp/">Laboratory of Sequence Analysis</a> under Prof.&nbsp;Tetsuo Shibuya.
+      I received my B.S. and M.Sc. in Computer Engineering from <a href="http://cmpe.boun.edu.tr/">Boğaziçi University</a>.
+    </p>
+    <p class="bio" data-lang="ja">
+      <a href="https://www.indeed.com/">Indeed</a>にてソフトウェアエンジニアとして、実世界の課題に対するNLPソリューションの開発に従事しています。
+      東京大学大学院情報理工学系研究科にて博士号（コンピュータ科学）を取得。渋谷哲夫教授の<a href="http://shibuyalab.hgc.jp/">配列解析研究室</a>にて自然言語処理・機械学習・バイオインフォマティクスの研究に従事しました。
+      学部・修士課程は<a href="http://cmpe.boun.edu.tr/">ボアズィチ大学</a>コンピュータ工学科を修了。
+    </p>
 
-I am a second year Ph.D student in the
-Department of Computer Science of University of Tokyo, in [Laboratory of Sequence Analysis](http://shibuyalab.hgc.jp/) under the supervision of Prof. Tetsuo Shibuya.
+    <p class="bio" data-lang="en">
+      I am passionate about building reliable agentic systems and shipping LLM-powered products that work in the wild. My current focus is on LLM safety — hardening real-world pipelines against prompt injection and adversarial inputs — while designing robust agentic applications at scale.
+    </p>
+    <p class="bio" data-lang="ja">
+      信頼性の高いエージェントシステムの構築と、実環境で機能するLLM製品の開発に情熱を持っています。現在はLLMの安全性に注力しており、プロンプトインジェクションや敵対的入力に対する実世界パイプラインの堅牢化と、スケーラブルなエージェントアプリケーションの設計に取り組んでいます。
+    </p>
 
-
-I received my BS and Ms in [Computer Engineering](http://cmpe.boun.edu.tr/), where I focused on Natural Language Processing and Machine Learning.
-
-[curriculum vitae ![CV as pdf](icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/resumeMay2020.pdf)<br/>
-[google scholar](https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=tr&oi=ao)<br/>
-[github](https://github.com/ardakdemir)<br/>
-[blog](https://ardakdemir.github.io) <br/>
-
-
-#### Work
-
-- Data Engineer Intern, Apple Japan, Tokyo Nov. 2019 ~
-- Research Assistant, University of Tokyo, Department of Computer Science Dec. 2019 ~
-- Google Summer of Code, Julia Programming Language  June-August 2019
-- NLP Researcher, Koc University, Istanbul June 2018 - September 2019
-
-#### Publications
-
-- Akdemir, Arda. "Research on Task Discovery for Transfer Learning in Deep Neural Networks." Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: Student Research Workshop. 2020. [link](https://www.aclweb.org/anthology/2020.acl-srw.6.pdf)
-- Akdemir, Arda, Tetsuo Shibuya, and Tunga Güngör. "Hierarchical Multi Task Learning with Subword Contextual Embeddings for Languages with Rich Morphology." arXiv preprint arXiv:2004.12247 (2020). [link](https://arxiv.org/pdf/2004.12247.pdf)
-- Zhang, Yao-zhong, et al. "Nanopore base-calling from a perspective of instance segmentation." bioRxiv (2019): 694919. [link](https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf)
-- Akdemir A., Güngör T. (2019) A Detailed Analysis and Improvement of Feature-Based Named Entity Recognition for Turkish. In: Salah A., Karpov A., Potapova R. (eds) Speech and Computer. SPECOM 2019. Lecture Notes in Computer Science, vol 11658. Springer, Cham [link](https://link.springer.com/chapter/10.1007/978-3-030-26061-3_2)
-- Akdemir, Arda, et al. "Towards generalizable place name recognition systems: analysis and enhancement of NER systems on English News from India." Proceedings of the 12th Workshop on Geographic Information Retrieval. ACM, 2018. [link](https://dl.acm.org/citation.cfm?id=3281363)
-- Akdemir, Arda, and Tunga Güngör. "Joint Learning of Named Entity Recognition and Dependency Parsing using Separate Datasets." [link](https://www.cmpe.boun.edu.tr/~gungort/papers/Joint%20Learning%20of%20Named%20Entity%20Recognition%20and%20Dependency%20Parsing%20using%20Separate%20Datasets.pdf)
-
-#### Books
-
-- Introduction to Markov Chains (in Turkish), Asst.Prof.Dr. Umit Islak,  M.Sc. Arda Akdemir - to be published
-
-#### Conferences
-
-- [ACL 2020](https://acl2020.org/), Virtual Conference, 2020 - Long Oral Presentation 
-- [21st SPECOM Conference](http://specom.nw.ru/), Turkey 2019 - Long Oral Presentation 
-- [27th ISMB/ECCB Conference](https://www.iscb.org/ismbeccb2019), Switzerland 2019 - Poster Presentation
-- [20th CICLing Conference](https://www.cicling.org/2019/), France 2019 - Poster Presentation
-- [12th Workshop on Geographic Information Retrieval GIR'18](http://www.geo.uzh.ch/~rsp/gir18/program.html) at ACM SIGSPATIAL 2018 - Long Oral Presentation
-- [Istanbul Mathematical Sciences Center, Probability Days](https://sites.google.com/site/umitislak/imbmprobdays2018) Conference 2018 - Oral Presentation
-- BYOYO Workshop, 2018 - Volunteer
-- [ProtestNews Lab in CLEF 2019](https://emw.ku.edu.tr/clef-protestnews-2019/) - Organizing Committee Member
-- Informatics in Biology, Medicine and Pharmacology IIBMP, 2019 - Participant
-- [WINTER FESTA Episode 5](https://aip.riken.jp/sympo/winterfesta5/) -  Hitotsubashi University, 2019 - Presentor (Short Talk and Poster)
-
-#### Honors & Awards
-
-- ***Best Graduation Project Award*** in Computer Engineering  Project Title : Adaptive Tuning of Chess Evaluation Function by Using Genetic Algorithms. [link](https://www.cmpe.boun.edu.tr/content/adaptive-tuning-chess-evaluation-function-using-genetic-algorithms)
-- ***First Prize*** in Upper Level Japanese Speech Contest organized by Japanese Embassy in 2018 日本語弁論大会優勝者
-- ***MEXT Scholarship Recipient*** University of Tokyo - 1 of 10 recipients from Turkey (2018 - )
-- ***JASSO Scholarship Recipient*** Osaka University (2015-2016)
-
-
-#### Languages
-
-- Japanese: Advanced (N1 141/180)
-- English: Advanced (Toefl 113/120)
-- Turkish: Native
-
-
----
-
-<div class="container">
-<h4><a name="Contact Me"></a>contact</h4>
-
-    <div class="row-fluid">
-        <div class="span5">
-            Arda Akdemir<br/>
-            <a href="https://www.is.s.u-tokyo.ac.jp/english/">Department of Computer Science, Graduate School of IST </a><br/>
-            <a href="https://www.u-tokyo.ac.jp/ja/index.html">University of Tokyo</a><br/>
-            <a href="http://hgc.jp/english/">Human Genome Center</a><br/>
-            4-6-1, Shirokanedai, Minato-ku <br/>
-             Tokyo 108-8639<br/>
-            JAPAN<br/><br/>
-
-            <div id="hide_email">
-            Email: <code>a</code><b>I</b><code>akdemir</code><b>don't</b><code>@</code><b>want</b><code></code><b>spam!
-            </b><code></code><b>So</b><code></code><b>please</b><code>hgc</code><b>leave
-            </b><code></code><b>me</b><code>.</code><b>alone</b><code>j</code><b>!</b><code>p</code><br/>
-            Phone: +81 080-8718-2650
-            </div>
-        </div>
-
-        <div class="span2">
-        <a href="../assets/pics/photo.png">
-            <img src="../assets/pics/photo.png"
-                  title="Arda Akdemir" alt="Arda"/></a>
-        </div>
+    <div class="hero-links">
+      <a href="https://github.com/ardakdemir"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=en"><i class="fa-solid fa-graduation-cap"></i> Scholar</a>
     </div>
-</div>
+  </div>
+</section>
+
+<!-- ==================== PUBLICATIONS ==================== -->
+<section class="section" id="publications">
+  <h2 data-lang="en">Selected Publications</h2>
+  <h2 data-lang="ja">主要論文</h2>
+
+  <ul class="pub-list">
+
+    <li class="pub-item">
+      <span class="pub-title">Understanding and Defending Against Resume-Based Prompt Injections in HR AI</span>
+      <span class="pub-authors"><span class="me">Arda Akdemir</span>, Joshua H. Levy</span>
+      <span class="pub-venue">RecSys-in-HR Workshop @ RecSys 2025, CEUR-WS Vol. 4046</span>
+      <span class="pub-links"><a href="https://ceur-ws.org/Vol-4046/RecSysHR2025-paper_9.pdf">paper</a></span>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-title">Developing Language Resources and NLP Tools for the North Korean Language</span>
+      <span class="pub-authors"><span class="me">Arda Akdemir</span>, Yeojoo Jeon, Tetsuo Shibuya</span>
+      <span class="pub-venue">LREC 2022, Marseille, France</span>
+      <span class="pub-links"><a href="https://aclanthology.org/2022.lrec-1.600/">paper</a></span>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-title">Research on Task Discovery for Transfer Learning in Deep Neural Networks</span>
+      <span class="pub-authors"><span class="me">Arda Akdemir</span></span>
+      <span class="pub-venue">ACL 2020: Student Research Workshop</span>
+      <span class="pub-links"><a href="https://www.aclweb.org/anthology/2020.acl-srw.6.pdf">paper</a></span>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-title">Hierarchical Multi Task Learning with Subword Contextual Embeddings for Languages with Rich Morphology</span>
+      <span class="pub-authors"><span class="me">Arda Akdemir</span>, Tetsuo Shibuya, Tunga Güngör</span>
+      <span class="pub-venue">arXiv preprint, 2020</span>
+      <span class="pub-links"><a href="https://arxiv.org/pdf/2004.12247.pdf">paper</a></span>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-title">Nanopore base-calling from a perspective of instance segmentation</span>
+      <span class="pub-authors">Yao-zhong Zhang, <span class="me">Arda Akdemir</span>, et al.</span>
+      <span class="pub-venue">bioRxiv, 2019</span>
+      <span class="pub-links"><a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/694919.full.pdf">paper</a></span>
+    </li>
+
+  </ul>
+
+</section>
+
+<!-- ==================== CAREER ==================== -->
+<section class="section" id="career">
+  <h2 data-lang="en">Career</h2>
+  <h2 data-lang="ja">経歴</h2>
+
+  <table class="career-table">
+    <tr>
+      <td class="date-col">2022 – Present</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Indeed</span>
+        <span class="org" data-lang="ja">Indeed</span>
+        <span data-lang="en"> Software Engineer</span>
+        <span data-lang="ja"> ソフトウェアエンジニア</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">2019 – 2025</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">University of Tokyo</span>
+        <span class="org" data-lang="ja">東京大学</span>
+        <span data-lang="en"> Research Assistant / Visiting Researcher</span>
+        <span data-lang="ja"> リサーチアシスタント / 客員研究員</span>
+        <br><span class="detail" data-lang="en">Shibuya Lab — NLP, ML</span>
+        <span class="detail" data-lang="ja">渋谷研究室 — 自然言語処理・機械学習</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">2019 – 2021</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Apple Japan</span>
+        <span class="org" data-lang="ja">Apple Japan</span>
+        <span data-lang="en"> ML Engineer Intern (during Ph.D.)</span>
+        <span data-lang="ja"> MLエンジニアインターン（博士課程中）</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">Jun – Aug 2019</td>
+      <td class="role-col">
+        <span class="org">Google Summer of Code</span>
+        <span data-lang="en"> — Julia Programming Language</span>
+        <span data-lang="ja"> — Julia プログラミング言語</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">Jun 2018 – Sep 2019</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Koç University</span>
+        <span class="org" data-lang="ja">コチ大学</span>
+        <span data-lang="en"> NLP Researcher</span>
+        <span data-lang="ja"> NLP 研究員</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">2019 – 2022</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">University of Tokyo</span>
+        <span class="org" data-lang="ja">東京大学</span>
+        <span data-lang="en"> Ph.D. in Computer Science</span>
+        <span data-lang="ja"> 博士号（コンピュータ科学）</span>
+        <br><span class="detail" data-lang="en">Advised by Prof. Tetsuo Shibuya</span>
+        <span class="detail" data-lang="ja">指導教員：渋谷哲夫教授</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">2012 – 2018</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Boğaziçi University</span>
+        <span class="org" data-lang="ja">ボアズィチ大学</span>
+        <span data-lang="en"> B.S. + M.Sc. in Computer Engineering</span>
+        <span data-lang="ja"> 学士号＋修士号（コンピュータ工学）</span>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ==================== AWARDS ==================== -->
+<section class="section" id="awards">
+  <h2 data-lang="en">Honors &amp; Awards</h2>
+  <h2 data-lang="ja">受賞歴</h2>
+
+  <ul class="award-list">
+    <li>
+      <strong data-lang="en">Best Graduation Project Award</strong>
+      <strong data-lang="ja">最優秀卒業プロジェクト賞</strong>
+      <span data-lang="en"> — Computer Engineering. <em>Adaptive Tuning of Chess Evaluation Function by Using Genetic Algorithms.</em> <a href="https://www.cmpe.boun.edu.tr/content/adaptive-tuning-chess-evaluation-function-using-genetic-algorithms">link</a></span>
+      <span data-lang="ja"> — コンピュータ工学科。<em>遺伝的アルゴリズムによるチェス評価関数の適応的調整</em></span>
+    </li>
+    <li>
+      <strong data-lang="en">First Prize</strong>
+      <strong data-lang="ja">最優秀賞</strong>
+      <span data-lang="en"> — Upper Level Japanese Speech Contest, Japanese Embassy, 2018 &nbsp;日本語弁論大会優勝者</span>
+      <span data-lang="ja"> — 上級日本語弁論大会（日本大使館主催、2018年）</span>
+    </li>
+    <li>
+      <strong data-lang="en">MEXT Scholarship Recipient</strong>
+      <strong data-lang="ja">文部科学省奨学金受給者</strong>
+      <span data-lang="en"> — University of Tokyo — 1 of 10 recipients from Turkey (2018–)</span>
+      <span data-lang="ja"> — 東京大学 — トルコからの10名の受給者の1人（2018年〜）</span>
+    </li>
+    <li>
+      <strong data-lang="en">JASSO Scholarship Recipient</strong>
+      <strong data-lang="ja">JASSO奨学金受給者</strong>
+      <span data-lang="en"> — Osaka University (2015–2016)</span>
+      <span data-lang="ja"> — 大阪大学（2015年〜2016年）</span>
+    </li>
+  </ul>
+
+  <h3 data-lang="en">Languages</h3>
+  <h3 data-lang="ja">言語</h3>
+
+  <div class="lang-pills">
+    <span class="lang-pill"><strong>Turkish</strong> — Native</span>
+    <span class="lang-pill"><strong>English</strong> — Advanced (TOEFL 113/120)</span>
+    <span class="lang-pill"><strong>Japanese</strong> — Advanced (N1 141/180)</span>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="section" id="contact">
+  <h2 data-lang="en">Contact</h2>
+  <h2 data-lang="ja">連絡先</h2>
+
+  <ul class="contact-list">
+    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:ardaakdemir1@gmail.com">ardaakdemir1@gmail.com</a></li>
+    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/arda-akdemir-87b3a892/">LinkedIn</a></li>
+    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ardakdemir">github.com/ardakdemir</a></li>
+    <li><i class="fa-solid fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=en">Google Scholar</a></li>
+  </ul>
+</section>
