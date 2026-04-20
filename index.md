@@ -48,6 +48,12 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
   <ul class="pub-list">
 
     <li class="pub-item">
+      <span class="pub-title">RAPIDS: Resume Attack Prompt Injection Detection at Scale <span class="pub-badge" data-lang="en">To appear</span><span class="pub-badge" data-lang="ja">発表予定</span></span>
+      <span class="pub-authors">Yohann Augey, <span class="me">Arda Akdemir</span>, Joshua H. Levy</span>
+      <span class="pub-venue">ACL 2026 Industry Track</span>
+    </li>
+
+    <li class="pub-item">
       <span class="pub-title">Understanding and Defending Against Resume-Based Prompt Injections in HR AI</span>
       <span class="pub-authors"><span class="me">Arda Akdemir</span>, Joshua H. Levy</span>
       <span class="pub-venue">RecSys-in-HR Workshop @ RecSys 2025, CEUR-WS Vol. 4046</span>
