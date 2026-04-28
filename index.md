@@ -49,7 +49,7 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 
     <li class="pub-item">
       <span class="pub-title">RAPIDS: Resume Attack Prompt Injection Detection at Scale <span class="pub-badge" data-lang="en">To appear</span><span class="pub-badge" data-lang="ja">発表予定</span></span>
-      <span class="pub-authors">Yohann Augey, <span class="me">Arda Akdemir</span>, Joshua H. Levy</span>
+      <span class="pub-authors">Yohann Augey, Joshua H. Levy, <span class="me">Arda Akdemir</span></span>
       <span class="pub-venue">ACL 2026 Industry Track</span>
       <span class="pub-links"><a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">paper</a></span>
     </li>
