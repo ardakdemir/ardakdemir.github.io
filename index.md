@@ -14,23 +14,24 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
     <h1>Arda Akdemir</h1>
 
     <p class="bio" data-lang="en">
-      Hi! I am Arda Akdemir. I am a Software Engineer at <a href="https://www.indeed.com/">Indeed</a>, where I build NLP solutions for real-world applications.
-      I hold a Ph.D. in Computer Science from the <a href="https://www.u-tokyo.ac.jp/en/">University of Tokyo</a>,
-      where I worked on Natural Language Processing, Machine Learning, and Bioinformatics
-      in the <a href="http://shibuyalab.hgc.jp/">Laboratory of Sequence Analysis</a> under Prof.&nbsp;Tetsuo Shibuya.
-      I received my B.S. and M.Sc. in Computer Engineering from <a href="http://cmpe.boun.edu.tr/">Boğaziçi University</a>.
+      Hi! I'm Arda Akdemir, a Software Engineer at <a href="https://www.indeed.com/">Indeed</a> building NLP and GenAI solutions for real-world applications.
     </p>
     <p class="bio" data-lang="ja">
-      <a href="https://www.indeed.com/">Indeed</a>にてソフトウェアエンジニアとして、実世界の課題に対するNLPソリューションの開発に従事しています。
-      東京大学大学院情報理工学系研究科にて博士号（コンピュータ科学）を取得。渋谷哲夫教授の<a href="http://shibuyalab.hgc.jp/">配列解析研究室</a>にて自然言語処理・機械学習・バイオインフォマティクスの研究に従事しました。
-      学部・修士課程は<a href="http://cmpe.boun.edu.tr/">ボアズィチ大学</a>コンピュータ工学科を修了。
+      <a href="https://www.indeed.com/">Indeed</a>にてソフトウェアエンジニアとして、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
     </p>
 
     <p class="bio" data-lang="en">
-      I am passionate about building reliable agentic systems and shipping LLM-powered products that work in the wild. My current focus is on LLM safety — hardening real-world pipelines against prompt injection and adversarial inputs — while designing robust agentic applications at scale.
+      I have a PhD in NLP and a research background and interest, but I'm a builder at heart. Over the last 3 years I've brought multiple GenAI products from 0-to-1 prototype to production, including multi-agent systems implemented using open-source frameworks. I'm a hands-on tech lead on the work that makes agents robust and reliable in the wild: evaluation frameworks, LLM-as-a-judge pipelines, and production observability. On the research side, my latest work on resume-based prompt injection appears at <a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>.
     </p>
     <p class="bio" data-lang="ja">
-      信頼性の高いエージェントシステムの構築と、実環境で機能するLLM製品の開発に情熱を持っています。現在はLLMの安全性に注力しており、プロンプトインジェクションや敵対的入力に対する実世界パイプラインの堅牢化と、スケーラブルなエージェントアプリケーションの設計に取り組んでいます。
+      自然言語処理の博士号を持ち、研究のバックグラウンドと関心を持ち続けていますが、根っからのビルダーです。ここ3年間で、オープンソースフレームワークを用いたマルチエージェントシステムを含む複数のGenAIプロダクトを0→1のプロトタイプから本番環境まで一貫して構築してきました。実環境で堅牢かつ信頼性高く動作するエージェントを構築するため、評価フレームワーク、LLM-as-a-judgeパイプライン、本番モニタリング基盤においてハンズオンのテックリードを担っています。研究面では、最新の履歴書プロンプトインジェクション対策が<a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>に採択されました。
+    </p>
+
+    <p class="bio bio-edu" data-lang="en">
+      <strong>Education & credentials:</strong> Ph.D. in Computer Science, University of Tokyo (<a href="http://shibuyalab.hgc.jp/">Laboratory of Sequence Analysis</a>, Prof.&nbsp;Tetsuo Shibuya). JLPT N1 (2017).
+    </p>
+    <p class="bio bio-edu" data-lang="ja">
+      <strong>学歴・資格：</strong>東京大学大学院情報理工学系研究科にて博士号（コンピュータ科学）取得（渋谷哲夫教授の<a href="http://shibuyalab.hgc.jp/">配列解析研究室</a>）。日本語能力試験N1取得（2017年）。
     </p>
 
     <div class="hero-links">
