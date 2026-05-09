@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Arda Akdemir
-description: Computer Scientist | NLP, Machine Learning, Bioinformatics
+description: Staff ML Engineer @ Indeed | NLP, GenAI, Machine Learning
 keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 ---
 
@@ -14,10 +14,10 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
     <h1>Arda Akdemir</h1>
 
     <p class="bio" data-lang="en">
-      Hi! I'm Arda Akdemir, a Software Engineer at <a href="https://www.indeed.com/">Indeed</a> building NLP and GenAI solutions for real-world applications.
+      Hi! I'm Arda Akdemir, a Staff ML Engineer at <a href="https://www.indeed.com/">Indeed</a> (since April 2026), building NLP and GenAI solutions for real-world applications.
     </p>
     <p class="bio" data-lang="ja">
-      <a href="https://www.indeed.com/">Indeed</a>にてソフトウェアエンジニアとして、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
+      <a href="https://www.indeed.com/">Indeed</a>にてスタッフ MLエンジニアとして（2026年4月〜）、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
     </p>
 
     <p class="bio" data-lang="en">
@@ -95,13 +95,25 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 </section>
 
 <!-- ==================== CAREER ==================== -->
-<section class="section" id="career">
+<section class="section career-split" id="career">
   <h2 data-lang="en">Career</h2>
   <h2 data-lang="ja">経歴</h2>
 
+  <h3 data-lang="en">Work experience</h3>
+  <h3 data-lang="ja">職歴</h3>
+
   <table class="career-table">
     <tr>
-      <td class="date-col">2022 – Present</td>
+      <td class="date-col">Apr 2026 – Present</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Indeed</span>
+        <span class="org" data-lang="ja">Indeed</span>
+        <span data-lang="en"> Staff ML Engineer</span>
+        <span data-lang="ja"> スタッフ MLエンジニア</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">2022 – Mar 2026</td>
       <td class="role-col">
         <span class="org" data-lang="en">Indeed</span>
         <span class="org" data-lang="ja">Indeed</span>
@@ -146,6 +158,12 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
         <span data-lang="ja"> NLP 研究員</span>
       </td>
     </tr>
+  </table>
+
+  <h3 data-lang="en">Education</h3>
+  <h3 data-lang="ja">学歴</h3>
+
+  <table class="career-table">
     <tr>
       <td class="date-col">2019 – 2022</td>
       <td class="role-col">
