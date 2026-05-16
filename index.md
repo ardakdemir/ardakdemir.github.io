@@ -104,21 +104,18 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 
   <table class="career-table">
     <tr>
-      <td class="date-col">Apr 2026 – Present</td>
+      <td class="date-col">Apr 2022 – Present</td>
       <td class="role-col">
         <span class="org" data-lang="en">Indeed</span>
         <span class="org" data-lang="ja">Indeed</span>
-        <span data-lang="en"> Staff ML Engineer</span>
-        <span data-lang="ja"> スタッフ MLエンジニア</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="date-col">2022 – Mar 2026</td>
-      <td class="role-col">
-        <span class="org" data-lang="en">Indeed</span>
-        <span class="org" data-lang="ja">Indeed</span>
-        <span data-lang="en"> Software Engineer</span>
-        <span data-lang="ja"> ソフトウェアエンジニア</span>
+        <br><span class="detail" data-lang="en">Staff Machine Learning Engineer &nbsp;<em>(Apr 2026 – Present)</em></span>
+        <span class="detail" data-lang="ja">スタッフ MLエンジニア &nbsp;<em>（2026年4月〜現在）</em></span>
+        <br><span class="detail" data-lang="en">Senior Software Engineer &nbsp;<em>(Apr 2025 – Mar 2026)</em></span>
+        <span class="detail" data-lang="ja">シニアソフトウェアエンジニア &nbsp;<em>（2025年4月〜2026年3月）</em></span>
+        <br><span class="detail" data-lang="en">Software Engineer II &nbsp;<em>(Apr 2024 – Mar 2025)</em></span>
+        <span class="detail" data-lang="ja">ソフトウェアエンジニア II &nbsp;<em>（2024年4月〜2025年3月）</em></span>
+        <br><span class="detail" data-lang="en">Software Engineer &nbsp;<em>(Apr 2022 – Mar 2024)</em></span>
+        <span class="detail" data-lang="ja">ソフトウェアエンジニア &nbsp;<em>（2022年4月〜2024年3月）</em></span>
       </td>
     </tr>
     <tr>
