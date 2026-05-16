@@ -233,7 +233,7 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 
   <ul class="contact-list">
     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:ardaakdemir1@gmail.com">ardaakdemir1@gmail.com</a></li>
-    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/arda-akdemir-87b3a892/">LinkedIn</a></li>
+    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/aakdemir/">LinkedIn</a></li>
     <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ardakdemir">github.com/ardakdemir</a></li>
     <li><i class="fa-solid fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=RfquIk4AAAAJ&hl=en">Google Scholar</a></li>
   </ul>
