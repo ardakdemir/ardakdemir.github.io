@@ -14,10 +14,10 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
     <h1>Arda Akdemir</h1>
 
     <p class="bio" data-lang="en">
-      Hi! I'm Arda Akdemir, a Staff ML Engineer at <a href="https://www.indeed.com/">Indeed</a> (since April 2026), building NLP and GenAI solutions for real-world applications.
+      Hi! I'm Arda Akdemir, a Staff ML Engineer at <a href="https://www.indeed.com/">Indeed</a>, building NLP and GenAI solutions for real-world applications.
     </p>
     <p class="bio" data-lang="ja">
-      <a href="https://www.indeed.com/">Indeed</a>にてスタッフ MLエンジニアとして（2026年4月〜）、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
+      <a href="https://www.indeed.com/">Indeed</a>にてスタッフ MLエンジニアとして、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
     </p>
 
     <p class="bio" data-lang="en">
