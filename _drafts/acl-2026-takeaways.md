@@ -20,7 +20,7 @@ My main takeaways:
 - **Poster halls beat oral sessions—for me.** Posters made it much easier to find unexpected work, meet people, ask questions, and jump between topics. I got a lot more out of that format.
 - **NLP is still incredibly broad.** Even though so much of the field is converging around LLMs, I saw a huge range of ideas and research questions—especially some really interesting work grounded in language and linguistics.
 
-Despite all the challenges the field is facing, I came back energized by how many interesting ideas there are still to work on. Exciting times for NLP! And it certainly helped that the San Diego weather was amazing :)
+Despite all the challenges the field is facing, I came back super energized by how many interesting ideas there are still to work on. Exciting times for NLP! And finally, San Diego weather was amazing :)
 
 I wrote a longer version of my takeaways here:
 https://ardakdemir.github.io/blog/2026/07/12/acl-2026-takeaways
@@ -50,7 +50,7 @@ At the same time, I came back very inspired. I met researchers working on all ki
 
 ### Panel Discussion on Explainability
 
-Tal Linzen talked about how academia rewards small, publishable findings even when they do not add up or generalize. For explainability research in particular, he would like to see deeper work that holds up across different models, domains, and use cases.
+It was brought up during the panel that academia rewards small, publishable findings even when they do not add up or generalize. For explainability research in particular, we need deeper work that holds up across different models, domains, and use cases.
 
 This came up again and again during the conference: do not keep jumping from one small improvement to the next. Pick questions and build work that can last.
 
