@@ -9,16 +9,21 @@ This document contains both versions while they are being developed. Remove the 
 
 ## Version 1: LinkedIn Post
 
-I just got back from ACL 2026 and thought I can share a few things that stuck with me.
+I just got back from ACL 2026 and thought I could share a few things that stuck with me.
 
 My main takeaways:
 
-- **The submission crisis is a “success catastrophe.”** One point I took from Philip Resnik's keynote was that NLP has grown so much that reviewing can no longer keep up. I also came away thinking about how similar ACL, EMNLP, and even broader ML conferences have become, and the growing tension between publishing to advance knowledge and publishing to compete for top research jobs.
-- **Evaluation does not just measure progress; it shapes it.** Barbara Plank made a strong case for taking evaluation more seriously as a science and for keeping language at the center of NLP.
-- **Build work that compounds.** Comments in the explainability panel and the Big Picture invited talk pushed back on the short-term publishing mindset: jumping from one small, publishable gain to the next instead of doing deeper, long-lasting research.
-- **Strong researchers are also strong engineers.** In the Careers in NLP panel, Iz talked about how blurry the line between research and engineering has become. Taking ownership, executing, and being able to unblock yourself are all important research skills.
-- **Poster halls beat oral sessions—for me.** Posters made it much easier to find unexpected work, meet people, ask questions, and jump between topics. I got a lot more out of that format.
-- **NLP is still incredibly broad.** Even though so much of the field is converging around LLMs, I saw a huge range of ideas and research questions—especially some really interesting work grounded in language and linguistics.
+• The submission crisis is a “success catastrophe.” One point that stood out to me from the opening keynote was that NLP has grown so much that reviewing can no longer keep up. The keynote also highlighted how similar ACL, EMNLP, and even broader ML conferences have become, as well as the growing tension between publishing to advance knowledge and publishing to compete for top research jobs.
+
+• Evaluation does not just measure progress; it shapes it. Barbara Plank made a strong case for taking evaluation more seriously as a science and for keeping language at the center of NLP.
+
+• Build work that compounds. Comments in the explainability panel and the Big Picture invited talk pushed back on the short-term publishing mindset: jumping from one small, publishable gain to the next instead of doing deeper, long-lasting research.
+
+• Strong researchers are also strong engineers. In the Careers in NLP panel, Iz talked about how blurry the line between research and engineering has become. Taking ownership, executing, and being able to unblock yourself are all important research skills.
+
+• Poster halls beat oral sessions—for me. Posters made it much easier to find unexpected work, meet people, ask questions, and jump between topics. I got a lot more out of that format.
+
+• NLP is still incredibly broad. Even though so much of the field is converging around LLMs, I saw a huge range of ideas and research questions—especially some really interesting work grounded in language and linguistics.
 
 Despite all the challenges the field is facing, I came back super energized by how many interesting ideas there are still to work on. I was also really inspired by the energy and ideas of so many bright grad students—and excited about the impact they will have on the field. Exciting times for NLP! And finally, San Diego weather was amazing :)
 
