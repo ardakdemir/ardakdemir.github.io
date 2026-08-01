@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Arda Akdemir
-description: Staff ML Engineer @ Indeed | NLP, GenAI, Machine Learning
+description: GenAI FDE @ Google Japan (ex-Staff MLE @ Indeed) | NLP, GenAI, Machine Learning
 keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 ---
 
@@ -14,17 +14,17 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
     <h1>Arda Akdemir</h1>
 
     <p class="bio" data-lang="en">
-      Hi! I'm Arda Akdemir, a Staff ML Engineer at <a href="https://www.indeed.com/">Indeed</a>, building NLP and GenAI solutions for real-world applications.
+      Hi! I'm Arda Akdemir, a GenAI FDE (Forward Deployed Engineer) at <a href="https://about.google/">Google Japan</a>, working to transform Japanese enterprise using AI. Prior to Google, I was a Staff ML Engineer at <a href="https://www.indeed.com/">Indeed</a>, building NLP and GenAI solutions for real-world applications.
     </p>
     <p class="bio" data-lang="ja">
-      <a href="https://www.indeed.com/">Indeed</a>にてスタッフ MLエンジニアとして、実世界の課題に対するNLP・GenAIソリューションの開発に従事しています。
+      <a href="https://about.google/">Google Japan</a>にてGenAI FDE（フォワードデプロイドエンジニア）として、AIを活用した日本のエンタープライズ変革に従事しています。Google参画前は<a href="https://www.indeed.com/">Indeed</a>にてスタッフ MLエンジニアを務め、実世界の課題に対するNLP・GenAIソリューションの開発に従事していました。
     </p>
 
     <p class="bio" data-lang="en">
-      I have a PhD in NLP and a research background and interest, but I'm a builder at heart. Over the last 3 years I've brought multiple GenAI products from 0-to-1 prototype to production, including multi-agent systems implemented using open-source frameworks. I'm a hands-on tech lead on the work that makes agents robust and reliable in the wild: evaluation frameworks, LLM-as-a-judge pipelines, and production observability. On the research side, my latest work on resume-based prompt injection appears at <a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>.
+      I have a PhD in NLP and a research background and interest, but I'm a builder at heart. Prior to joining Google, as a Staff ML Engineer at Indeed over the last 3 years, I've brought multiple GenAI products from 0-to-1 prototype to production, including multi-agent systems implemented using open-source frameworks. I'm a hands-on tech lead on the work that makes agents robust and reliable in the wild: evaluation frameworks, LLM-as-a-judge pipelines, and production observability. On the research side, my latest work on resume-based prompt injection appears at <a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>.
     </p>
     <p class="bio" data-lang="ja">
-      自然言語処理の博士号を持ち、研究のバックグラウンドと関心を持ち続けていますが、根っからのビルダーです。ここ3年間で、オープンソースフレームワークを用いたマルチエージェントシステムを含む複数のGenAIプロダクトを0→1のプロトタイプから本番環境まで一貫して構築してきました。実環境で堅牢かつ信頼性高く動作するエージェントを構築するため、評価フレームワーク、LLM-as-a-judgeパイプライン、本番モニタリング基盤においてハンズオンのテックリードを担っています。研究面では、最新の履歴書プロンプトインジェクション対策が<a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>に採択されました。
+      自然言語処理の博士号を持ち、研究のバックグラウンドと関心を持ち続けていますが、根っからのビルダーです。前職のIndeedではスタッフMLエンジニアとして、ここ3年間でオープンソースフレームワークを用いたマルチエージェントシステムを含む複数のGenAIプロダクトを0→1のプロトタイプから本番環境まで一貫して構築してきました。実環境で堅牢かつ信頼性高く動作するエージェントを構築するため、評価フレームワーク、LLM-as-a-judgeパイプライン、本番モニタリング基盤においてハンズオンのテックリードを担っています。研究面では、最新の履歴書プロンプトインジェクション対策が<a href="https://openreview.net/forum?id=68a4FXwzs7#discussion">ACL 2026</a>に採択されました。
     </p>
 
     <p class="bio bio-edu" data-lang="en">
@@ -104,12 +104,23 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
 
   <table class="career-table">
     <tr>
-      <td class="date-col">Apr 2022 – Present</td>
+      <td class="date-col">Jul 2026 – Present</td>
+      <td class="role-col">
+        <span class="org" data-lang="en">Google Japan</span>
+        <span class="org" data-lang="ja">Google Japan</span>
+        <br><span class="detail" data-lang="en">GenAI FDE (Forward Deployed Engineer) &nbsp;<em>(Jul 2026 – Present)</em></span>
+        <span class="detail" data-lang="ja">GenAI FDE（フォワードデプロイドエンジニア） &nbsp;<em>（2026年7月〜現在）</em></span>
+        <br><span class="detail" data-lang="en">Founding member of the GenAI Forward Deployed Engineering team.</span>
+        <span class="detail" data-lang="ja">GenAI Forward Deployed Engineering チームの創設メンバー。</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="date-col">Apr 2022 – Jul 2026</td>
       <td class="role-col">
         <span class="org" data-lang="en">Indeed</span>
         <span class="org" data-lang="ja">Indeed</span>
-        <br><span class="detail" data-lang="en">Staff Machine Learning Engineer &nbsp;<em>(Apr 2026 – Present)</em></span>
-        <span class="detail" data-lang="ja">スタッフ MLエンジニア &nbsp;<em>（2026年4月〜現在）</em></span>
+        <br><span class="detail" data-lang="en">Staff Machine Learning Engineer &nbsp;<em>(Apr 2026 – Jul 2026)</em></span>
+        <span class="detail" data-lang="ja">スタッフ MLエンジニア &nbsp;<em>（2026年4月〜2026年7月）</em></span>
         <br><span class="detail" data-lang="en">Senior Software Engineer &nbsp;<em>(Apr 2025 – Mar 2026)</em></span>
         <span class="detail" data-lang="ja">シニアソフトウェアエンジニア &nbsp;<em>（2025年4月〜2026年3月）</em></span>
         <br><span class="detail" data-lang="en">Software Engineer II &nbsp;<em>(Apr 2024 – Mar 2025)</em></span>
