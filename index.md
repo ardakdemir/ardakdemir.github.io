@@ -77,13 +77,6 @@ keywords: Machine Learning, Deep Learning, NLP, Bioinformatics
     </li>
 
     <li class="pub-item">
-      <span class="pub-title">Hierarchical Multi Task Learning with Subword Contextual Embeddings for Languages with Rich Morphology</span>
-      <span class="pub-authors"><span class="me">Arda Akdemir</span>, Tetsuo Shibuya, Tunga Güngör</span>
-      <span class="pub-venue">arXiv preprint, 2020</span>
-      <span class="pub-links"><a href="https://arxiv.org/pdf/2004.12247.pdf">paper</a></span>
-    </li>
-
-    <li class="pub-item">
       <span class="pub-title">Nanopore base-calling from a perspective of instance segmentation</span>
       <span class="pub-authors">Yao-zhong Zhang, <span class="me">Arda Akdemir</span>, et al.</span>
       <span class="pub-venue">bioRxiv, 2019</span>
